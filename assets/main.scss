@@ -3,4 +3,22 @@
 ---
 @charset "utf-8";
 
+@import 'https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i';
+
+body, html {
+  font-family: 'Space Mono', ipm, Menlo, 'Courier New', monospace;
+  background-color: #f0f0e6;
+  color: #f04e45;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+svg {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 //@import "sass/main";

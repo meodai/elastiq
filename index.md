@@ -4,5 +4,3 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
-# some bullshit there
-## and see what happens
