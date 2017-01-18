@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  {{ content }}
+
+  <section class="quote-list">
+    <h1>Quotes</h1>
+    {% for quote in site.data.quotes %}
+      {{ quote.name }}
+      <blockquote>
+        {{ quote.body }}
+      </blockquote>
+    {% endfor %}
+  </section>
+
+
+</div>
