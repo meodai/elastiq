@@ -1,21 +1,22 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
 @import 'https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i';
 
 html {
-  font-size: calc(0.8rem + 2vw);
+  font-size: calc(0.5rem + 2vw);
 }
 
 body, html {
   font-family: 'Space Mono', ipm, Menlo, 'Courier New', monospace;
   background-color: #f0f0e6;
   color: #f04e45;
-  text-align: center;
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 .logo {
@@ -31,6 +32,10 @@ body, html {
   }
 }
 
+.l-max {
+  max-width: 30rem;
+  margin: 0 auto;
+}
 
 .intro {
   height: 100vh;

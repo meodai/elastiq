@@ -1,23 +1,29 @@
 ---
 layout: default
 ---
+<article>
+  <p>As an interaction &amp; design developer I explore ways to melt code
+   and design, while raising the quality and creative freedom of both.</p>
 
-<div class="home">
+  <ul>
+    <li>Help you communicate your design in a meaningful way</li>
+    <li>Write scalable code with a strong focus on semantics and modularity</li>
+    <li>Create delightful animations for your next project</li>
+    <li>Advice and train designers in design methodology</li>
+  </ul>
+</article>
+<section class="quote-list">
+  <h1>What people are saying</h1>
+  {% for quote in site.data.quotes %}
+    <article>
+      <blockquote>
+        {{ quote.body }}
+      </blockquote>
+      <header>
+        <h2>{{ quote.name }}</h2>
+        <h3>{{ quote.position }}</h3>
+      </header>
+    </article>
+  {% endfor %}
+</section>
 
-  <section class="quote-list">
-    <h1>What people are saying</h1>
-    {% for quote in site.data.quotes %}
-      <article>
-        <blockquote>
-          {{ quote.body }}
-        </blockquote>
-        <header>
-          <h2>{{ quote.name }}</h2>
-          <h3>{{ quote.position }}</h3>
-        </header>
-      </article>
-    {% endfor %}
-  </section>
-
-
-</div>
