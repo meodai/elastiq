@@ -4,17 +4,18 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  {{ content }}
-
   <section class="quote-list">
-    <h1>Quotes</h1>
+    <h1>What people are saying</h1>
     {% for quote in site.data.quotes %}
-      {{ quote.name }}
-      <blockquote>
-        {{ quote.body }}
-      </blockquote>
+      <article>
+        <blockquote>
+          {{ quote.body }}
+        </blockquote>
+        <header>
+          <h2>{{ quote.name }}</h2>
+          <h3>{{ quote.position }}</h3>
+        </header>
+      </article>
     {% endfor %}
   </section>
 

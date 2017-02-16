@@ -5,6 +5,10 @@
 
 @import 'https://fonts.googleapis.com/css?family=Space+Mono:400,700,700i';
 
+html {
+  font-size: calc(0.8rem + 2vw);
+}
+
 body, html {
   font-family: 'Space Mono', ipm, Menlo, 'Courier New', monospace;
   background-color: #f0f0e6;
@@ -12,13 +16,29 @@ body, html {
   text-align: center;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-svg {
+.logo {
+  .font {
+    fill:#f04e45;
+  }
+  .elastiq {
+    fill: none;
+    stroke: #eca6ca;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width:11.4;
+  }
+}
+
+
+.intro {
+  height: 100vh;
+  overflow: hidden;
+  &__logo {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
+    width: 80%;
+  }
 }
-
-//@import "sass/main";
