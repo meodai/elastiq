@@ -19,6 +19,33 @@ body, html {
   line-height: 1.5;
 }
 
+.intro-text {
+  border: 10px solid #eca6ca;
+  border-radius: 0.25rem;
+  height: 100vh;
+  p {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 20rem;
+    transform: translate(-50%,-50%);
+  }
+}
+
+
+.intro {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  &__logo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+  }
+}
+
 .logo {
   .font {
     fill:#f04e45;
@@ -37,13 +64,3 @@ body, html {
   margin: 0 auto;
 }
 
-.intro {
-  height: 100vh;
-  overflow: hidden;
-  &__logo {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-  }
-}
