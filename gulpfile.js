@@ -1,18 +1,9 @@
 const gulp = require('gulp');
 const config = require('./gulp/config')();
 const t = require('./gulp/utils/tasksHelpers')(gulp, config);
-const zip = require('gulp-zip');
-const inlinesource = require("gulp-inline-source");
 
 gulp.task('zip', () =>
   gulp.src(config.destPaths.root + '/**').pipe(zip(`build.zip`)).pipe(gulp.dest(config.destPaths.root))
-);
-
-gulp.task("inline", () =>
-  gulp
-    .src(config.destPaths.root + "/**/*.html")
-    .pipe(inlinesource())
-    .pipe(gulp.dest(config.destPaths.root))
 );
 
 // ----------//
@@ -43,7 +34,6 @@ gulp.task('build:styles', t.getTask('styles'));
 // Move all javscript files to the build
 gulp.task('build:scripts', t.getTask('scripts'));
 
-
 gulp.task(
   "build",
   gulp.series(
@@ -51,8 +41,7 @@ gulp.task(
     gulp.parallel("build:assets", "build:meta"),
     "build:icons-sprite",
     gulp.parallel("build:styles", "build:scripts"),
-    gulp.series("build:content", "build:pages"),
-    "zip"
+    gulp.series("build:content", "build:pages")
   )
 );
 

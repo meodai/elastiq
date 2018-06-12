@@ -4,9 +4,20 @@ block meta
   title Elastiq
 
 block body
-  each quote in data.quotes
-    blockquote.quote(cite=quote.url)
-      p= quote.text
-      footer.quote__footer
-        strong.quote__person= quote.person
-        span.quote__position= quote.position
+  .splash
+    header
+      h1.logo
+        .is-hidden Elastiq
+        include ../../content/images/elastiq.svg
+    article.quotes
+      ul
+        each quote in data.quotes
+          li
+            strong= quote.person
+            span= quote.position
+      each quote in data.quotes
+        blockquote.quote(cite=quote.url)
+          p!= quote.text
+          footer.quote__footer.is-hidden
+            strong.quote__person= quote.person
+            span.quote__position= quote.position

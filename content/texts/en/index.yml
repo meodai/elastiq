@@ -1,3 +1,8 @@
+mission: >
+  As an interaction developer with visual skills, I explore ways to melt code and design,
+  while raising the quality and creative freedom of both. I use my passion and
+  enthusiasm as a tool to promote ideas and skills.
+
 quotes:
   -
     url: https://www.linkedin.com/in/davidaerne/
@@ -61,3 +66,17 @@ quotes:
       industry.
     person: Evangelos Avramakis
     position: Head of Cross Channel Management at Helsana Insurance
+
+social:
+  -
+    name: Twitter
+    url: https://twitter.com/meodai/
+  -
+    name: Codepen
+    url: https://codepen.io/meodai/
+  -
+    name: Github
+    url: https://github.com/meodai/
+  -
+    name: LinkedIn
+    url: https://www.linkedin.com/in/davidaerne/

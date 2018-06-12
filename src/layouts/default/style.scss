@@ -2,20 +2,47 @@
 $s-base: 10px;
 $s-font-base: 1.6rem;
 
+:root {
+  --c-brand-contrast: #f0f0e6;
+  --c-logo-type: #f04e45;
+  --bg: var(--c-brand-contrast);
+}
 
 body, html {
-  font-family: "schrifft";
+  font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-smooth: always;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 html {
-  font-size: $s-base;
+  font-size: calc(.75rem + 2vw);
 }
 
 body {
   font-size: $s-font-base;
   font-weight: normal;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  .font {
+    fill: var(--c-logo-type);
+  }
+}
+
+.quote {
+  p {
+    font-style: italic;
+  }
+}
+
+.splash {
+  position: absolute;
+  top: 1vw; left: 1vw; bottom: 1vw; right: 1vw;
+  background: var(--bg);
 }
