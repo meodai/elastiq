@@ -1,0 +1,21 @@
+/// sizes
+$s-base: 10px;
+$s-font-base: 1.6rem;
+
+
+body, html {
+  font-family: "schrifft";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-smooth: always;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+html {
+  font-size: $s-base;
+}
+
+body {
+  font-size: $s-font-base;
+  font-weight: normal;
+}

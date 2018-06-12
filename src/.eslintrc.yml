@@ -1,0 +1,9 @@
+env:
+  node: false
+  browser: true
+  commonjs: true
+
+rules:
+  # override default rule. this forces trailling commas also on functions
+  # as we have babel transpilation that removes the syntax error.
+  comma-dangle: [2, "always"]

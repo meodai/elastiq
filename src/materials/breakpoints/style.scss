@@ -1,0 +1,13 @@
+@import "sensible/mediaqueries";
+
+/**
+ * Define the breakpoints for vendor/sensible/mediaqueries
+ * They are defined the mobile first way
+ */
+
+$breakpoints: (
+    "mobile"              : "only screen and (max-width:740px)",
+    "tablet"              : "only screen and (max-width:1050px)",
+    "desktop"             : "only screen and (min-width:1051px)",
+    "print"               : "print"
+);
