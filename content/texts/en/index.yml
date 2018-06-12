@@ -1,22 +1,63 @@
-categories:
+quotes:
   -
-    title: Hotel
-    pic: village.jpg
+    url: https://www.linkedin.com/in/davidaerne/
+    text: >
+      David is a very motivated frontend developer whose
+      mind is full of curiosity, ideas and creative thinking.
+      On top of that he's a communication talent and very easy to get along with.
+      I'd also like to mention that he's been an important part in developing
+      the frontend for <a href="https://www.swiss.com/ch/en">swiss.com</a>
+    person: Severin Klaus
+    position: Head of Interaction Development at Hinderling Volkart AG
+
   -
-    title: Schlafen
-    pic: room.jpg
+    url: https://www.linkedin.com/in/davidaerne/
+    text: >
+      David is one of the few individuals that keeps impressing
+      me with a great sense for delightful micro-interactions.
+      His ability to create beautiful web experiences, that are both accessible
+      and work smoothly across all devices is unique.
+    person: Adrian Zumbrunnen
+    position: UX Designer at Google
+
   -
-    title: Geniessen
-    pic: restaurtant2.jpg
+    url: https://www.linkedin.com/in/davidaerne/
+    text: >
+      David is one of the rare people who know how to write scalable and readable
+      CSS. He strives for perfection and his systematic approach makes it easy
+      to pick up where he left.<br/> David thought me, that there is more to CSS
+      than spaghetti and pixels.
+    person: Pierre Spring
+    position: Partner at Nelmio AG
+
   -
-    title: Tagen
-    pic: confroom.jpg
+    url: https://www.linkedin.com/in/davidaerne/
+    text: >
+      He's very talented and self motivated frontend geek that was a huge help in
+      every project I worked with. You could be sure to deliver if the frontend
+      tasks were given to him. Very positive minded person that I really appreciated.
+    person: Nail Ünlü
+    position: Cloud Strategy & Architecture Lead (Director) at Swiss Re
+
   -
-    title: Feiern
-    pic: party.jpg
+    url: https://www.linkedin.com/in/davidaerne/
+    text: >
+      David is one of the rare people who know how to write scalable and readable
+      CSS. He strives for perfection and his systematic approach makes it easy
+      to pick up where he left.<br/> David thought me, that there is more to CSS
+      than spaghetti and pixels.
+    person: Pierre Spring
+    position: Partner at Nelmio AG
+
   -
-    title: Apenzell
-    pic: region.jpg
-  -
-    title: Aktuell
-    pic: restaurant.jpg
+    url: https://www.linkedin.com/in/davidaerne/
+    text: >
+      When it comes to complex online interactions and animations things are
+      getting really complicated as smooth transitions aligned with its context
+      makes the difference. How to effectively balance between user experience
+      and front-end development considering the variety of browsers to be
+      supported, David showed impressively how best in class animations feels
+      like elevating the project to a significant showcase in the insurance
+      industry.
+    person: Evangelos Avramakis
+    position: Head of Cross Channel Management at Helsana Insurance
