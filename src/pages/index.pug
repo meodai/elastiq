@@ -4,3 +4,9 @@ block meta
   title Elastiq
 
 block body
+  each quote in data.quotes
+    blockquote.quote(cite=quote.url)
+      p= quote.text
+      footer.quote__footer
+        strong.quote__person= quote.person
+        span.quote__position= quote.position
