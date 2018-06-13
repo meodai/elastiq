@@ -28,6 +28,7 @@
   "dependencies": {
     "base64-img": "^1.0.3",
     "countup.js": "^1.8.5",
+    "css-reset-and-normalize-sass": "^0.1.2",
     "css-scroll-snap-polyfill": "^0.1.2",
     "debounce": "^1.1.0",
     "flickity": "^2.0.10",

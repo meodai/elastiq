@@ -1,9 +1,11 @@
+@import "css-reset-and-normalize-sass/scss/imports/reset";
+
 /// sizes
 $s-base: 10px;
 $s-font-base: 1.6rem;
 
 :root {
-  --c-brand-contrast: #f0f0e6;
+  --c-brand-contrast: #§;
   --c-logo-type: #f04e45;
   --bg: var(--c-brand-contrast);
 }
@@ -24,10 +26,6 @@ body {
   font-weight: normal;
 }
 
-.is-hidden {
-  display: none;
-}
-
 .logo {
   position: absolute;
   .font {
@@ -45,4 +43,8 @@ body {
   position: absolute;
   top: 1vw; left: 1vw; bottom: 1vw; right: 1vw;
   background: var(--bg);
+}
+
+.is-hidden, [hidden] {
+  display: none !important;
 }
