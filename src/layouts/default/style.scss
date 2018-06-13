@@ -5,9 +5,20 @@ $s-base: 10px;
 $s-font-base: 1.6rem;
 
 :root {
-  --c-brand-contrast: #§;
+  --c-brand-contrast: #f0f0e6;
   --c-logo-type: #f04e45;
-  --bg: var(--c-brand-contrast);
+  --c-logo: #eca6ca;
+  --c-text: #000;
+  --c-text-light: rgba(#000, .5);
+
+  --c-interaction: var(--c-logo-type);
+  --c-bg: var(--c-brand-contrast);
+
+  --s-page-bezel: 2.4rem;
+  --s-elastiq-width: 45.6;
+  --s-title-stack: 2.4rem;
+  --s-link-inline: 1rem;
+  --s-recommendation-stack: 2.4rem;
 }
 
 body, html {
@@ -17,6 +28,7 @@ body, html {
   font-smooth: always;
   -webkit-font-smoothing: subpixel-antialiased;
 }
+
 html {
   font-size: calc(.75rem + 2vw);
 }
@@ -42,7 +54,7 @@ body {
 .splash {
   position: absolute;
   top: 1vw; left: 1vw; bottom: 1vw; right: 1vw;
-  background: var(--bg);
+  background: var(--c-bg);
 }
 
 .is-hidden, [hidden] {
