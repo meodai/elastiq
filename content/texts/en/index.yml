@@ -80,3 +80,65 @@ social:
   -
     name: LinkedIn
     url: https://www.linkedin.com/in/davidaerne/
+  -
+    name: Stackoverflow
+    url: https://stackoverflow.com/users/157397/meo
+
+clients:
+  -
+    name: Swiss
+    url: https://www.swiss.com/
+  -
+    name: Helsana
+    url: https://www.helsana.ch/
+  -
+    name: Zürcher Kantonalbank
+    url: https://www.zkb.ch
+  -
+    name: Viu
+    url: http://viu.ch/
+  -
+    name: Unic
+    url: https://www.unic.com/
+  -
+    name: Zürich Versicherungen
+    url: https://www.zurich.ch/
+  -
+    name: Canton of Aargau
+    url: https://www.ag.ch/
+  -
+    name: Samsung
+    url: http://www.samsung.com/ch/
+  -
+    name: Kreienbühl und Vogler
+    url: http://www.kreienbuehlundvogler.ch/
+  -
+    name: Sir Mary
+    url: https://sirmary.com/
+  -
+    name: Credit Suisse
+    url: https://www.credit-suisse.com/
+
+employers:
+  -
+    name: Unic
+    url: https://www.unic.com/
+  -
+    name: Hinderling & Volkart
+    url: https://www.hinderlingvolkart.com/
+  -
+    name: Nelmio
+    url: http://nelm.io/
+  -
+    name: Ginetta
+    url: https://www.ginetta.com/
+
+
+
+address:
+  title: Elastiq GmbH
+  street: Zentralstrasse 43
+  city: 8003 Zürich
+  phone: +41 78 895 81 19
+  email: tschou@elastiq.ch
+
