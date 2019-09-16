@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/meodai
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://elastiq.ch
+  * I am meodai (https://keybase.io/meodai) on keybase.
+  * I have a public key ASBY1XEa3K99p9jnM4I-c-VKQlDBcDonpLhPRwG9DK5cxAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208ba96ea56d8acbf214622ad7b661c8ddd7e2d33c2e486a32ca85957f3b312ced0a",
+      "host": "keybase.io",
+      "kid": "012058d5711adcaf7da7d8e733823e73e54a4250c1703a27a4b84f4701bd0cae5cc40a",
+      "uid": "59e97b0a32ffeec733f4a576cda8e919",
+      "username": "meodai"
+    },
+    "merkle_root": {
+      "ctime": 1568643740,
+      "hash": "4d2e4af121cc7c399d13bd911efe0c3e0547f2a344f205f093db8bd4dd1eaf2c1bab9ff50e17653e548709f804258841e29fd62f2ee184cf49596a351c181f75",
+      "hash_meta": "7912069eaf7291653bfde552dcb4ed6300ff0eb6a151af400d73519c0678779e",
+      "seqno": 7467856
+    },
+    "service": {
+      "entropy": "JHmWLXLPPiWXPBSQAsroHhhX",
+      "hostname": "elastiq.ch",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.2"
+  },
+  "ctime": 1568643749,
+  "expire_in": 504576000,
+  "prev": "dce851b6e560e535130030b44eaeae05c2cc7c68c7e27487b345bf35a7bff8ff",
+  "seqno": 24,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgWNVxGtyvfafY5zOCPnPlSkJQwXA6J6S4T0cBvQyuXMQKp3BheWxvYWTESpcCGMQg3OhRtuVg5TUTADC0Tq6uBcLMfGjH4nSHs0W/Nae/+P/EIIcr04MZqUrb+GlH648Gi/Aa4FJmH5QurqvUf/kPx5jVAgHCo3NpZ8RAWM7HgmRcxJQVfZYsJEAAWFP7CfGvWCGH1+2fN4shfAa5O67Y7/bkHS4jtFgoxo7IKpLIU1sj5X0LGuD/06XMAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPM8+/SrTuy+ij75FD+ZX8/inlK50cCWsUESQzRGhQ+ao3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/meodai
+
+==================================================================
