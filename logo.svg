@@ -1,6 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 613 433" class="logo header__logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 613 433">
   <defs>
     <style>
+      .font {
+        fill:#f04e45;
+      }
       .elastiq {
         fill: none;
         stroke: #eca6ca;

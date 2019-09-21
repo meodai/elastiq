@@ -1,6 +1,0 @@
-data:
-  name: arrow-right
-  title: Back
-options:
-  role: ['presentation', 'img']
-  reference: [true, false]

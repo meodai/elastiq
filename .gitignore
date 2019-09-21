@@ -1,6 +1,3 @@
-build
-node_modules
-.sass-cache
-.tmp
-npm-debug.log
-reports
+node_modules/
+dist/
+.cache/
