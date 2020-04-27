@@ -5,18 +5,22 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 :root {
   font-size: 62.5%;
   font-family: 'Space Mono', monospace;
-  padding: 2rem;
   background: #fff;
 }
 
 body {
-  position: relative;
-  background: #f0f0e6;
-  min-height: calc(100vh - 4rem);
-  padding: 6rem;
-  box-sizing: border-box;
   line-height: 1.7;
   font-size: calc(.75rem + .5vw);
+}
+
+.page {
+  position: relative;
+  padding: 2rem;
+
+  &__inner {
+    padding: 6rem;
+    background: #f0f0e6;
+  }
 }
 
 a {
@@ -30,12 +34,7 @@ a {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-blockquote {
+h1, h2, h3, h4, p, blockquote {
   margin: 0;
   padding: 0;
 }
@@ -55,7 +54,7 @@ h1 {
   position: relative;
   z-index: 2;
   line-height: 1.4;
-  margin-top: 75vh;
+  margin-top: 70vh;
   margin-bottom: 6rem;
   font-style: italic;
   font-size: 4.5rem;
@@ -70,16 +69,18 @@ h1 {
 .banner {
   position: relative;
   display: flex;
-  flex-wrap: warp;
+  flex-wrap: wrap;
 }
 
 .nametag {
-  flex: 1 1 50rem;
+  flex: 1 1 75%;
   padding-right: 1em;
-  white-space: nowrap;
+  box-sizing: border-box;
+  margin-bottom: 1em;
 }
 
 .address {
+  flex: 0 0 25%;
   z-index: 2;
   font-size: 1.4rem;
   white-space: nowrap;
@@ -87,9 +88,9 @@ h1 {
 
 .logo {
   position: absolute;
-  top: -4rem;
-  left: -5rem;
-  right: -5rem;
+  top: 0;
+  left: 0;
+  right: 0;
   height: calc(100vh + 6rem);
   overflow-x: hidden;
   user-select: none;
@@ -104,7 +105,7 @@ h1 {
 }
 
 .logo__symbol {
-  width: 180%;
+  width: 160%;
   height: auto;
   z-index: 1;
   position: fixed;
