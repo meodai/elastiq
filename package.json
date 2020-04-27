@@ -20,9 +20,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/meodai/elastiq/issues"
   },
-  "homepage": "https://github.com/meodai/elastiq#readme"
+  "homepage": "https://github.com/meodai/elastiq#readme",
+  "devDependencies": {
+    "sass": "^1.26.5"
+  }
 }
