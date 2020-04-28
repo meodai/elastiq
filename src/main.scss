@@ -148,7 +148,6 @@ h1 {
 .logo__type {
   top: 50vh;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   @media only screen and (max-width : 1024px) {
     top: 40vh;
@@ -156,11 +155,12 @@ h1 {
 }
 
 .logo__symbol {
-  width: 174%;
+  width: 474%;
   height: auto;
   z-index: 1;
   margin-top: 3rem;
   position: fixed;
+  transform: translate(-50%, -50%) scale(0.4);
   will-change: transform;
 
   @media only screen and (max-width : 1024px) {
@@ -178,6 +178,7 @@ h1 {
   padding: 0;
   line-height: 1;
   color: var(--c-brand);
+  transform: translate(-50%, -50%);
 
   span {
     color: transparent;

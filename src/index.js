@@ -5,7 +5,7 @@ const $clock = document.querySelector('[data-clock]');
 const scroller = () => {
   const progress = window.scrollY / window.innerHeight;
   const progressMax = Math.min(progress, 1);
-  $logo.style.transform = `translate(-50%, calc(-50% - ${progressMax * 40}rem)) scale(${1 + (progressMax * 1.2)}) rotate(${-35 * progress}deg)`;
+  $logo.style.transform = `translate(-50%, calc(-50% - ${progressMax * 40}rem)) scale(${0.4 + (progressMax * .6)}) rotate(${-35 * progress}deg)`;
 
   $logoWrap.style.setProperty('--top', progress * 13 + 'vmax');
 };
