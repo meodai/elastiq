@@ -35,6 +35,8 @@ body {
     padding: 2rem 2rem 55vw;
   }
   &__inner {
+    position: relative;
+    z-index: 1;
     padding: 6rem 6rem 10rem;
     background: var(--c-layout-bg);
 
@@ -114,9 +116,9 @@ h1 {
 
   &--footer {
     position: fixed;
-    z-index: -1;
+    z-index: 0;
     bottom: 5rem;
-    padding-left: 5rem;
+    padding-left: 6rem;
     font-size: 1.6rem;
 
     @media only screen and (max-width : 1024px) {
