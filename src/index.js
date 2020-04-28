@@ -27,3 +27,4 @@ window.addEventListener('scroll', (e) => {
 });
 
 setInterval(setTimeVars, 1000);
+setTimeVars();
