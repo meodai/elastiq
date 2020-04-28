@@ -28,12 +28,13 @@ body {
 
 .page {
   position: relative;
-  padding: 3rem 3rem 20rem;
+  padding: 3rem 3rem 23rem;
   overflow: hidden;
 
   @media only screen and (max-width : 1024px) {
-    padding: 2rem 2rem 55vw;
+    padding: 2rem 2rem calc(55vw);
   }
+
   &__inner {
     position: relative;
     z-index: 1;
@@ -235,7 +236,7 @@ h1 {
 .illustration {
   position: absolute;
   z-index: 3;
-  width: 50%;
+  width: 55%;
   bottom: 0;
   right: 10%;
 
