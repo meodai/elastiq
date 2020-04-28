@@ -12,11 +12,12 @@ body {
   line-height: 1.7;
   font-size: calc(.75rem + .5vw);
   min-height: 100vh;
+  padding-bottom: 20vw;
 }
 
 .page {
   position: relative;
-  padding: 2rem;
+  padding: 3rem;
   overflow: hidden;
 
   &__inner {
@@ -64,7 +65,7 @@ h1 {
   max-width: 150rem;
 
   @media only screen and (max-width : 1024px) {
-    margin-top: 50vh;
+    margin-top: 0;
   }
 }
 
@@ -72,6 +73,12 @@ h1 {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+
+  @media only screen and (max-width : 1024px) {;
+    flex-direction: column;
+    height: 80vh;
+    flex-wrap: nowrap;
+  }
 }
 
 .nametag {
@@ -104,6 +111,10 @@ h1 {
   top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media only screen and (max-width : 1024px) {
+    top: 40vh;
+  }
 }
 
 .logo__symbol {
@@ -178,4 +189,12 @@ h1 {
 
 .recommendation__quote {
   margin-top: 1em;
+}
+
+.illustration {
+  position: fixed;
+  z-index: -1;
+  width: 30%;
+  bottom: 0;
+  right: 10%;
 }
