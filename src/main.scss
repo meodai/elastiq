@@ -36,10 +36,10 @@ body {
   }
 
   &__inner {
-    position: relative;
-    z-index: 1;
     padding: 6rem 6rem 10rem;
     background: var(--c-layout-bg);
+    position: relative;
+    z-index: 1;
 
     @media only screen and (max-width : 1024px) {
       padding: 3rem;
@@ -184,6 +184,14 @@ h1 {
   }
 }
 
+.logo__type--bg {
+  margin-top: 3rem;
+
+  @media only screen and (max-width : 1024px) {
+    margin-top: 2rem;
+  }
+}
+
 .elastiq {
   fill: none;
   stroke: var(--c-brand-alt);
@@ -270,7 +278,7 @@ h1 {
     --s-clock-diameter: 7.2vmax;
     --s-hand-diameter: .8rem;
     transform: translate(50%, -50%) scale(.7);
-    bottom: 24vw;
+    bottom: 26vw;
     right: 20vw;
   }
 
