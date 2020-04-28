@@ -20,9 +20,16 @@ body {
   padding: 3rem;
   overflow: hidden;
 
+  @media only screen and (max-width : 1024px) {
+    padding: 2rem;
+  }
   &__inner {
     padding: 6rem;
     background: #f0f0e6;
+
+    @media only screen and (max-width : 1024px) {
+      padding: 3rem;
+    }
   }
 }
 
