@@ -4,25 +4,25 @@
 
 <head>
   <!-- Primary Meta Tags -->
-  <title>Elastiq GmbH – David Aerne – Interaction Developer</title>
-  <meta name="title" content="Elastiq GmbH – David Aerne – Interaction Developer">
+  <title>{{ pageTitle }}</title>
+  <meta name="title" content="{{ pageTitle }}">
   <meta name="description"
-    content="Frontend Developer. Exploring ways to melt code and design, while raising the quality and creative freedom of both. I use my passion and enthusiasm as a tool to promote ideas and skills.">
+    content="Frontend Developer. {{ intro }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://elastiq.ch/">
-  <meta property="og:title" content="Elastiq GmbH – David Aerne – Interaction Developer">
+  <meta property="og:title" content="{{ pageTitle }}">
   <meta property="og:description"
-    content="Frontend Developer. Exploring ways to melt code and design, while raising the quality and creative freedom of both. I use my passion and enthusiasm as a tool to promote ideas and skills.">
+    content="Frontend Developer. {{ intro }}">
   <meta property="og:image" content="https://www.elastiq.ch/logo.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://elastiq.ch/">
-  <meta property="twitter:title" content="Elastiq GmbH – David Aerne – Interaction Developer">
+  <meta property="twitter:title" content="{{ pageTitle }}">
   <meta property="twitter:description"
-    content="Frontend Developer. Exploring ways to melt code and design, while raising the quality and creative freedom of both. I use my passion and enthusiasm as a tool to promote ideas and skills.">
+    content="Frontend Developer. {{ intro }}">
   <meta property="twitter:image" content="https://www.elastiq.ch/logo.png">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,74 +57,19 @@
         </address>
       </footer>
 
-      <p class="intro">Exploring ways to blend code and design while raising the quality and creative freedom of both. I use
-        my passion and enthusiasm as a tool to promote ideas and skills.</p>
+      <p class="intro">{{ intro }}</p>
 
       <article class="recommendations section">
         <h2 class="recommendations__title title--sub">Recommendations</h2>
-        <aside class="recommendation">
-          <h3 class="recommendation__person">Severin Klaus</h3>
-          <h4 class="recommendation__title">Technical Director / Managing Partner at Hinderling Volkart</h4>
-          <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
-            <p>David is a very motivated frontend developer whose mind is full of curiosity, ideas and creative thinking. On
-              top of that he's a communication talent and very easy to get along with. I'd also like to mention that he's been
-              an important part in developing the frontend for <a href="https://www.swiss.com/">swiss.com</a>.</p>
-          </blockquote>
-        </aside>
-
-        <aside class="recommendation">
-          <h3 class="recommendation__person">Adrian Zumbrunnen</h3>
-          <h4 class="recommendation__title">UX Designer at Google</h4>
-          <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
-            <p>David is one of the few individuals that keeps impressing me with a great sense for delightful
-              micro-interactions. His ability to create beautiful web experiences, that are both accessible and work smoothly
-              across all devices is unique.</p>
-          </blockquote>
-        </aside>
-
-        <aside class="recommendation">
-          <h3 class="recommendation__person">Pierre Spring</h3>
-          <h4 class="recommendation__title">Freelance Node.js and Frontend Developer</h4>
-          <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
-            <p>David is one of the rare people who know how to write scalable and readable CSS. He strives for perfection and
-              his systematic approach makes it easy to pick up where he left. David taught me that there is more to CSS than
-              spaghetti and pixels.</p>
-          </blockquote>
-        </aside>
-
-        <aside class="recommendation">
-          <h3 class="recommendation__person">Nail Ünlü</h3>
-          <h4 class="recommendation__title">Cloud Strategy & Architecture Lead (Director) at Swiss Re</h4>
-          <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
-            <p>He's a very talented and self motivated frontend geek that was a huge help in every project I worked with. You
-              could be sure to deliver if the frontend tasks were given to him. Very positive minded person who I really
-              appreciated.</p>
-          </blockquote>
-        </aside>
-
-        <aside class="recommendation">
-          <h3 class="recommendation__person">Evangelos Avramakis</h3>
-          <h4 class="recommendation__title">Head of Cross Channel Management at Helsana Insurance</h4>
-          <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
-            <p>When it comes to complex online interactions and animations things are getting really complicated as smooth
-              transitions aligned with its context makes the difference. How to effectively balance between user experience
-              and front-end development considering the variety of browsers to be supported, David showed impressively how
-              best in class animations feels like elevating the project to a significant showcase in the insurance industry.
-            </p>
-          </blockquote>
-        </aside>
-
-        <aside class="recommendation">
-          <h3 class="recommendation__person">Angela Dannhorn</h3>
-          <h4 class="recommendation__title">Interaction Designer bei Google</h4>
-          <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
-            <p>With his passion for concepts, systems and interactions, David fills the gap between design and frontend. He is a great
-            ambassador and advisor for modularity and taxonomy, adding value to every single project I worked with him. David is a
-            true craftman when it comes to animations. Always tweaking and seeking to improve the user experience to its max. With
-            his attitude and style, working with him was not only rewarding but also refreshing.
-            </p>
-          </blockquote>
-        </aside>
+        <each loop="quote, index in quotes">
+          <aside class="recommendation">
+            <h3 class="recommendation__person">{{ quote.person }}</h3>
+            <h4 class="recommendation__title">{{ quote.position }}</h4>
+            <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
+              <p>{{{ quote.text }}}</p>
+            </blockquote>
+          </aside>
+        </each>
       </article>
 
       <!--article class="about section">
@@ -137,8 +82,10 @@
 
       <article class="social section">
         <h2 class="social__title title--sub">Social</h2>
-        <a href="https://twitter.com/meodai">Twitter</a> — <a href="https://codepen.io/meodai">Codepen</a> — <a
-          href="https://github.com/meodai">Github</a> — <a href="https://www.linkedin.com/in/davidaerne/">LinkedIn</a> — <a href="https://stackoverflow.com/users/157397/meo">Stackoverflow</a>
+        <each loop="link, index in social">
+          <a href="{{ link.url }}">{{ link.name }}</a> {{ loop.last ? '' : ' — ' }}
+        </each>
+
       </article>
 
     </div>

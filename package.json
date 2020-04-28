@@ -9,9 +9,8 @@
     "test": "npm run build",
     "pretest": "npm run lint",
     "lint": "npm run lint:js && npm run lint:css",
-    "lint:js": "eslint --ext .js,.vue src",
-    "lint:css": "npm run lint:css:vue && npm run lint:css:scss",
-    "lint:css:vue": "stylelint 'src/**/*.vue'",
+    "lint:js": "eslint --ext .js",
+    "lint:css": "npm run lint:css:scss",
     "lint:css:scss": "stylelint 'src/**/*.scss'"
   },
   "repository": {
@@ -26,8 +25,13 @@
   },
   "homepage": "https://github.com/meodai/elastiq#readme",
   "devDependencies": {
+    "autoprefixer": "^9.7.6",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "^2.3.1",
+    "postcss-modules": "^2.0.0",
+    "posthtml": "^0.13.0",
+    "posthtml-expressions": "^1.3.2",
+    "posthtml-load-config": "^1.0.0",
     "sass": "^1.26.5"
   },
   "staticFiles": {
