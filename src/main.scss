@@ -169,7 +169,10 @@ h1 {
 }
 
 .recommendation {
-  &+& {
+  position: relative;
+  z-index: 2;
+
+  & + & {
     margin-top: 5rem;
   }
 }
@@ -177,7 +180,7 @@ h1 {
 .recommendation__title,
 .recommendation__person {
   position: relative;
-  z-index: 2;
+
   font-size: 1.8rem;
   line-height: 1.3;
 }
