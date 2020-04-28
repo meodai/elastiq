@@ -27,6 +27,10 @@
   "homepage": "https://github.com/meodai/elastiq#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.3.1",
     "sass": "^1.26.5"
+  },
+  "staticFiles": {
+    "staticPath": "public"
   }
 }
