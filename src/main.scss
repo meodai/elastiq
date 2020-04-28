@@ -250,6 +250,7 @@ h1 {
   bottom: 0;
   right: 10%;
   pointer-events: none;
+  will-change: transform;
 
   @media only screen and (max-width : 1024px) {
     position: fixed;
