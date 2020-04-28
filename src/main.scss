@@ -254,22 +254,22 @@ h1 {
   --s-hand-diameter: .8rem;
   --s-hand-factor: .8;
   position: absolute;
-  bottom: 24vw;
-  right: 17vw;
+  bottom: 21vw;
+  right: 20vw;
   z-index: 10;
   width: var(--s-clock-diameter);
   height: var(--s-clock-diameter);
   background: var(--c-bg);
   border-radius: 50%;
   border: .5rem solid var(--c-brand-alt);
-
+  transform: translate(50%, -50%);
   @media only screen and (max-width : 1024px) {
     position: fixed;
     z-index: -1;
-    --s-clock-diameter: 7.2vw;
+    --s-clock-diameter: 7.2vmax;
     --s-hand-diameter: .8rem;
-    bottom: 35vw;
-    right: 20vw;
+    bottom: 32vw;
+    right: 24vw;
   }
 
   &::after {
