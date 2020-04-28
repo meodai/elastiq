@@ -240,10 +240,87 @@ h1 {
   width: 55%;
   bottom: 0;
   right: 10%;
+  pointer-events: none;
 
   @media only screen and (max-width : 1024px) {
     position: fixed;
     z-index: -1;
     width: 80%;
+  }
+}
+
+.clock {
+  --s-clock-diameter: 5.3vw;
+  --s-hand-diameter: .8rem;
+  --s-hand-factor: .8;
+  position: absolute;
+  bottom: 24vw;
+  right: 17vw;
+  z-index: 10;
+  width: var(--s-clock-diameter);
+  height: var(--s-clock-diameter);
+  background: var(--c-bg);
+  border-radius: 50%;
+  border: .5rem solid var(--c-brand-alt);
+
+  @media only screen and (max-width : 1024px) {
+    position: fixed;
+    z-index: -1;
+    --s-clock-diameter: 7.2vw;
+    --s-hand-diameter: .8rem;
+    bottom: 35vw;
+    right: 20vw;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: var(--s-hand-diameter);
+    height: var(--s-hand-diameter);
+    background: var(--c-text);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__hand {
+    --c-hand-bg: var(--c-text);
+    --progress: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--s-hand-diameter);
+    height: var(--s-hand-diameter);
+    margin-top: calc(var(--s-hand-diameter) * -0.5);
+    margin-left: calc(var(--s-hand-diameter) * -0.5);
+    transform: rotate(calc(var(--progress) * 360deg));
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 40%;
+      height: calc(var(--s-clock-diameter) * .5 * var(--s-hand-factor));
+      background: var(--c-hand-bg);
+      border-radius: 2rem;
+      transform: translateX(-50%);
+    }
+
+    &--second {
+      --progress: var(--minute-progress, 0);
+      --c-hand-bg: var(--c-brand);
+    }
+
+    &--minute {
+      --progress: var(--hour-progress, 0);
+    }
+
+    &--hour {
+      --progress: var(--day-progress, 0);
+      --s-hand-factor: .55;
+    }
   }
 }
