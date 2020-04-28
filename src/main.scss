@@ -155,12 +155,12 @@ h1 {
 }
 
 .logo__symbol {
-  width: 474%;
+  width: 600%;
   height: auto;
   z-index: 1;
   margin-top: 3rem;
   position: fixed;
-  transform: translate(-50%, -50%) scale(0.4);
+  transform: translate(-50%, -50%) scale(0.3);
   will-change: transform;
 
   @media only screen and (max-width : 1024px) {
