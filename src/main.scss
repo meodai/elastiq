@@ -11,11 +11,13 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 body {
   line-height: 1.7;
   font-size: calc(.75rem + .5vw);
+  min-height: 100vh;
 }
 
 .page {
   position: relative;
   padding: 2rem;
+  overflow: hidden;
 
   &__inner {
     padding: 6rem;
