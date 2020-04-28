@@ -10,6 +10,7 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
   --c-layout-bg: #f0f0e6;
   --c-text: #000;
   --c-brand: #f04e45;
+  --c-brand-w3a: #d41e14;
 
   background: var(--c-bg);
 }
@@ -61,7 +62,7 @@ h1 {
 
 .title--sub {
   font-size: 1.4rem;
-  color: var(--c-brand);
+  color: var(--c-brand-w3a);
   margin-bottom: 2rem;
   font-weight: normal;
 }
@@ -206,7 +207,7 @@ h1 {
 
 .recommendation__title {
   font-weight: normal;
-  color: var(--c-brand);
+  color: var(--c-brand-w3a);
   font-size: 1.4rem;
 }
 
