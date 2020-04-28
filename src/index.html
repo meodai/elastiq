@@ -48,6 +48,7 @@
 
       <footer class="banner">
         <h1 class="nametag">David Aerne – Interaction Developer</h1>
+
         <address class="address">
           <div>Elastiq GmbH</div>
           <div><a href="https://goo.gl/maps/znAQdWdQ8xz7Afag7">Zentralstrasse 43, 8003 Zürich</a></div>
@@ -61,6 +62,7 @@
 
       <article class="recommendations section">
         <h2 class="recommendations__title title--sub">Recommendations</h2>
+
         <each loop="quote, index in quotes">
           <aside class="recommendation">
             <h3 class="recommendation__person">{{ quote.person }}</h3>
@@ -82,15 +84,15 @@
 
       <article class="social section">
         <h2 class="social__title title--sub">Social</h2>
+
         <each loop="link, index in social">
           <a href="{{ link.url }}">{{ link.name }}</a> {{ loop.last ? '' : ' — ' }}
         </each>
-
       </article>
 
     </div>
     <svg class="illustration" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436.64 239.74">
-      <g data-name="Layer 2">
+      <g>
         <path d="M224 100.12a2.12 2.12 0 00-2.88-.83l-9.77 5.37-.25 5.28 12.07-6.94a2.12 2.12 0 00.83-2.88z"
           fill="#eca6ca" />
         <path d="M230.05 93.59a2.12 2.12 0 00-2.89-.83s-10 5.48-15.65 8.61l-.26 5.3 18-10.19a2.12 2.12 0 00.8-2.89z"
@@ -247,7 +249,6 @@
       <div><a href="https://zh.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-496.923.818">CHE-496.923.818</a></div>
     </address>
   </div>
-
 
   <script src="/index.js"></script>
 </body>
