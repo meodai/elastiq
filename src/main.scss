@@ -25,19 +25,18 @@ body {
   line-height: 1.7;
   font-size: calc(.75rem + .5vw);
   min-height: 100vh;
-  padding-bottom: 20vw;
 }
 
 .page {
   position: relative;
-  padding: 3rem;
+  padding: 3rem 3rem 20rem;
   overflow: hidden;
 
   @media only screen and (max-width : 1024px) {
-    padding: 2rem;
+    padding: 2rem 2rem 55vw;
   }
   &__inner {
-    padding: 6rem;
+    padding: 6rem 6rem 10rem;
     background: var(--c-layout-bg);
 
     @media only screen and (max-width : 1024px) {
@@ -222,9 +221,15 @@ h1 {
 }
 
 .illustration {
-  position: fixed;
-  z-index: -1;
-  width: 30%;
+  position: absolute;
+  z-index: 3;
+  width: 50%;
   bottom: 0;
   right: 10%;
+
+  @media only screen and (max-width : 1024px) {
+    position: fixed;
+    z-index: -1;
+    width: 80%;
+  }
 }
