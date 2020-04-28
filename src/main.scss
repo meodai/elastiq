@@ -11,8 +11,14 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
   --c-text: #000;
   --c-brand: #f04e45;
   --c-brand-w3a: #d60b00;
+  --c-brand-alt: #eca6ca;
 
   background: var(--c-bg);
+}
+
+::selection {
+  background: var(--c-brand);
+  color: var(--c-bg);
 }
 
 body {
@@ -166,7 +172,7 @@ h1 {
 
 .elastiq {
   fill: none;
-  stroke: #eca6ca;
+  stroke: var(--c-brand-alt);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 11.4px;
