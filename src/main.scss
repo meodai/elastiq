@@ -263,13 +263,15 @@ h1 {
   border-radius: 50%;
   border: .5rem solid var(--c-brand-alt);
   transform: translate(50%, -50%);
+
   @media only screen and (max-width : 1024px) {
     position: fixed;
     z-index: -1;
     --s-clock-diameter: 7.2vmax;
     --s-hand-diameter: .8rem;
-    bottom: 32vw;
-    right: 24vw;
+    transform: translate(50%, -50%) scale(.7);
+    bottom: 24vw;
+    right: 20vw;
   }
 
   &::after {
