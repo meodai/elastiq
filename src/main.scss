@@ -92,7 +92,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
 
-  @media only screen and (max-width : 1024px) {;
+  @media only screen and (max-width : 1024px) {
     flex-direction: column;
     height: 80vh;
     flex-wrap: nowrap;
@@ -111,6 +111,18 @@ h1 {
   z-index: 2;
   font-size: 1.4rem;
   white-space: nowrap;
+
+  &--footer {
+    position: fixed;
+    z-index: -1;
+    bottom: 5rem;
+    padding-left: 5rem;
+    font-size: 1.6rem;
+
+    @media only screen and (max-width : 1024px) {
+      display:  none;
+    }
+  }
 }
 
 .logo {
