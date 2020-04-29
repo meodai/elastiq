@@ -48,7 +48,6 @@ body {
 }
 
 a {
-  position: relative;
   color: var(--c-text);
   text-decoration: none;
 
@@ -56,16 +55,6 @@ a {
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-decoration-color: var(--c-brand);
-  }
-
-  &::after {
-    // make tab-area larger
-    content: '';
-    position: absolute;
-    top: -0.3ex;
-    bottom: -0.3ex;
-    right: -1ex;
-    left: -1ex;
   }
 }
 
