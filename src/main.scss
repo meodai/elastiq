@@ -94,6 +94,7 @@ h1 {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin-top: -1ex;
 
   @media only screen and (max-width : 1024px) {
     flex-direction: column;
