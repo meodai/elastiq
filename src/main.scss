@@ -158,11 +158,11 @@ h1 {
 }
 
 .logo__symbol {
+  position: fixed;
   width: 600%;
   height: auto;
   z-index: 1;
   margin-top: 3rem;
-  position: fixed;
   transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem)) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress)));
   will-change: transform;
 
