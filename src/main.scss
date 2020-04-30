@@ -2,9 +2,6 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 /*# sourceMappingURL=normalize.min.css.map */
 
 :root {
-  font-size: 62.5%;
-  font-family: 'Space Mono', monospace;
-
   --c-bg: #fff;
   --c-layout-bg: #f0f0e6;
   --c-text: #000;
@@ -12,7 +9,26 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
   --c-brand-w3a: #d60b00;
   --c-brand-alt: #eca6ca;
 
+  --s-page-bezel: 3rem;
+  --s-paper-bezel: 6rem;
+  --s-subtitle-stack: 2rem;
+
+  @media only screen and (max-width: 1024px) {
+    --s-page-bezel: 2rem;
+    --s-paper-bezel: var(--s-page-bezel);
+  }
+
+  --t-slight: 1.4rem;
+  --t-copy: 1.8rem;
+  --t-copy--small: 1.6rem;
+  --t-vip: calc(1.5rem + 1.5vw);
+
+  font-size: 62.5%; // 10px
+  font-family: 'Space Mono', monospace;
+
   background: var(--c-bg);
+
+
 }
 
 ::selection {
@@ -21,28 +37,28 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 }
 
 body {
+  font-size: calc(0.75rem + 0.5vw);
   line-height: 1.7;
-  font-size: calc(.75rem + .5vw);
   min-height: 100vh;
 }
 
 .page {
   position: relative;
-  padding: 3rem 3rem 23rem;
+  padding: var(--s-page-bezel) var(--s-page-bezel) calc(20rem + var(--s-page-bezel));
   overflow: hidden;
 
   @media only screen and (max-width: 1024px) {
-    padding: 2rem 2rem calc(55vw);
+    padding-bottom: calc(55vw);
   }
 
   &__inner {
-    padding: 6rem 6rem 10rem;
+    padding: var(--s-paper-bezel) var(--s-paper-bezel) calc(var(--s-paper-bezel) + 4rem);
     background: var(--c-layout-bg);
     position: relative;
     z-index: 1;
 
     @media only screen and (max-width: 1024px) {
-      padding: 3rem;
+      padding-bottom: var(--s-paper-bezel);
     }
   }
 }
@@ -68,9 +84,9 @@ h1 {
 }
 
 .title--sub {
-  font-size: 1.4rem;
+  font-size: var(--t-slight);
   color: var(--c-brand-w3a);
-  margin-bottom: 2rem;
+  margin-bottom: var(--s-subtitle-stack);
   font-weight: normal;
 }
 
@@ -79,10 +95,10 @@ h1 {
   z-index: 2;
   line-height: 1.4;
   margin-top: 70vh;
-  margin-bottom: 6rem;
+  margin-bottom: var(--s-paper-bezel);
   font-style: italic;
   font-size: 4.5rem;
-  font-size: calc(1.5rem + 1.5vw);
+  font-size: var(--t-vip);
   max-width: 150rem;
 
   @media only screen and (max-width: 1024px) {
@@ -104,26 +120,27 @@ h1 {
 }
 
 .nametag {
-  flex: 1 1 75%;
-  padding-right: 1em;
+  flex: 1 1 auto;
   box-sizing: border-box;
+  padding-right: 1em;
   margin-bottom: 1em;
   margin-top: -0.5ex;
+  font-size: var(--t-copy);
   font-weight: normal;;
 }
 
 .address {
-  flex: 0 0 25%;
+  flex: 0 0 auto;
   z-index: 2;
-  font-size: 1.4rem;
+  font-size: var(--t-slight);
   white-space: nowrap;
 
   &--footer {
     position: fixed;
     z-index: 0;
     bottom: 5rem;
-    padding-left: 6rem;
-    font-size: 1.6rem;
+    padding-left: var(--s-paper-bezel);
+    font-size: var(--t-copy--small);
 
     @media only screen and (max-width: 1024px) {
       display:  none;
@@ -132,20 +149,19 @@ h1 {
 }
 
 .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: calc(100vh + 6rem);
-  overflow: hidden;
-  user-select: none;
-  pointer-events: none;
-  will-change: top;
-
   --top: 0.001vw;
   --progressMax: 0;
   --progress: 0;
 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(100vh + var(--s-paper-bezel));
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+  will-change: top;
 }
 
 .logo__symbol,
@@ -163,7 +179,7 @@ h1 {
   width: 600%;
   height: auto;
   z-index: 1;
-  margin-top: 3rem;
+  margin-top: var(--s-page-bezel);
   transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem)) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress)));
   will-change: transform;
 
@@ -195,11 +211,7 @@ h1 {
 }
 
 .logo__type--bg {
-  margin-top: 3rem;
-
-  @media only screen and (max-width: 1024px) {
-    margin-top: 2rem;
-  }
+  margin-top: var(--s-page-bezel);
 }
 
 .elastiq {
@@ -215,7 +227,7 @@ h1 {
 }
 
 .section {
-  font-size: 1.8rem;
+  font-size: var(--t-copy);
   max-width: 75rem;
 }
 
@@ -223,7 +235,7 @@ h1 {
   position: relative;
   z-index: 2;
   margin-top: 5rem;
-  font-size: 1.6rem;
+  font-size: var(--t-copy--small);
   color: var(--c-brand-w3a);
 }
 
@@ -239,13 +251,13 @@ h1 {
 .recommendation__title,
 .recommendation__person {
   position: relative;
-  font-size: 1.8rem;
+  font-size: var(--t-copy);
 }
 
 .recommendation__title {
   font-weight: normal;
   color: var(--c-brand-w3a);
-  font-size: 1.4rem;
+  font-size: var(--t-slight);
 }
 
 .recommendation__quote {
