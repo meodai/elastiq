@@ -22,11 +22,13 @@ const setTimeVars = () => {
   $clock.style.setProperty('--day-progress', dayProgress);
 };
 
-window.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', () => {
   requestAnimationFrame(scroller);
 });
 
 setInterval(setTimeVars, 1000);
+
 setTimeVars();
+scroller();
 
 console.log('https://github.com/meodai/elastiq/');
