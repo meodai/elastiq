@@ -31,7 +31,7 @@ body {
   padding: 3rem 3rem 23rem;
   overflow: hidden;
 
-  @media only screen and (max-width : 1024px) {
+  @media only screen and (max-width: 1024px) {
     padding: 2rem 2rem calc(55vw);
   }
 
@@ -41,7 +41,7 @@ body {
     position: relative;
     z-index: 1;
 
-    @media only screen and (max-width : 1024px) {
+    @media only screen and (max-width: 1024px) {
       padding: 3rem;
     }
   }
@@ -85,7 +85,7 @@ h1 {
   font-size: calc(1.5rem + 1.5vw);
   max-width: 150rem;
 
-  @media only screen and (max-width : 1024px) {
+  @media only screen and (max-width: 1024px) {
     margin-top: 0;
   }
 }
@@ -96,7 +96,7 @@ h1 {
   flex-wrap: wrap;
   margin-top: -1ex;
 
-  @media only screen and (max-width : 1024px) {
+  @media only screen and (max-width: 1024px) {
     flex-direction: column;
     height: 80vh;
     flex-wrap: nowrap;
@@ -125,7 +125,7 @@ h1 {
     padding-left: 6rem;
     font-size: 1.6rem;
 
-    @media only screen and (max-width : 1024px) {
+    @media only screen and (max-width: 1024px) {
       display:  none;
     }
   }
@@ -153,7 +153,7 @@ h1 {
   top: 50vh;
   left: 50%;
 
-  @media only screen and (max-width : 1024px) {
+  @media only screen and (max-width: 1024px) {
     top: 40vh;
   }
 }
@@ -167,7 +167,7 @@ h1 {
   transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem)) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress)));
   will-change: transform;
 
-  @media only screen and (max-width : 1024px) {
+  @media only screen and (max-width: 1024px) {
     transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem + var(--top))) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress)));
   }
 
@@ -197,7 +197,7 @@ h1 {
 .logo__type--bg {
   margin-top: 3rem;
 
-  @media only screen and (max-width : 1024px) {
+  @media only screen and (max-width: 1024px) {
     margin-top: 2rem;
   }
 }
@@ -260,7 +260,7 @@ h1 {
   right: 10%;
   pointer-events: none;
 
-  @media only screen and (max-width : 1024px) {
+  @media only screen and (max-width: 1024px) {
     position: fixed;
     z-index: -1;
     width: 80%;
@@ -271,6 +271,7 @@ h1 {
   --s-clock-diameter: 5.3vw;
   --s-hand-diameter: .8rem;
   --s-hand-factor: .8;
+
   position: absolute;
   bottom: 21vw;
   right: 20vw;
@@ -282,11 +283,12 @@ h1 {
   border: .5rem solid var(--c-brand-alt);
   transform: translate(50%, -50%);
 
-  @media only screen and (max-width : 1024px) {
-    position: fixed;
-    z-index: -1;
+  @media only screen and (max-width: 1024px) {
     --s-clock-diameter: 7.2vmax;
     --s-hand-diameter: .8rem;
+
+    position: fixed;
+    z-index: -1;
     transform: translate(50%, -50%) scale(.7);
     bottom: 26vw;
     right: 20vw;
