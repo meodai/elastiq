@@ -140,9 +140,8 @@ h1 {
 
   &--footer {
     position: fixed;
-    bottom: calc(var(--s-paper-bezel) - 1rem);
+    bottom: var(--s-paper-bezel);
     padding-left: calc(var(--s-paper-bezel) + var(--s-page-bezel));
-    font-size: var(--t-copy);
 
     @media only screen and (max-width: 1024px) {
       display:  none;
