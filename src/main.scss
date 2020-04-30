@@ -24,11 +24,10 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
   --t-vip: calc(1.5rem + 1.5vw);
 
   font-size: 62.5%; // 10px
+  line-height: 1.7;
   font-family: 'Space Mono', monospace;
 
   background: var(--c-bg);
-
-
 }
 
 ::selection {
@@ -38,7 +37,6 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 
 body {
   font-size: calc(0.75rem + 0.5vw);
-  line-height: 1.7;
   min-height: 100vh;
 }
 
