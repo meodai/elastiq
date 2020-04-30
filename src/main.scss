@@ -138,7 +138,7 @@ h1 {
   &--footer {
     position: fixed;
     z-index: 0;
-    bottom: 5rem;
+    bottom: calc(var(--s-paper-bezel) - 1rem);
     padding-left: var(--s-paper-bezel);
     font-size: var(--t-copy--small);
 
