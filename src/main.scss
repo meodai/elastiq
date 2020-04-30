@@ -88,6 +88,10 @@ h1 {
   font-weight: normal;
 }
 
+.title--no-stack {
+  margin-bottom: 0;
+}
+
 .intro {
   position: relative;
   z-index: 2;
@@ -138,7 +142,7 @@ h1 {
     position: fixed;
     bottom: calc(var(--s-paper-bezel) - 1rem);
     padding-left: calc(var(--s-paper-bezel) + var(--s-page-bezel));
-    font-size: var(--t-copy--small);
+    font-size: var(--t-copy);
 
     @media only screen and (max-width: 1024px) {
       display:  none;
@@ -227,15 +231,20 @@ h1 {
 .section {
   font-size: var(--t-copy);
   max-width: 75rem;
+  margin-top: 5rem;
+
+  a {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .social {
   position: relative;
-  z-index: 2;
-  margin-top: 5rem;
-  font-size: var(--t-copy--small);
+  font-size: var(--t-copy);
   color: var(--c-brand-w3a);
 }
+
 
 .recommendation {
   position: relative;
