@@ -179,7 +179,7 @@ h1 {
   height: auto;
   z-index: 1;
   margin-top: var(--s-page-bezel);
-  transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem)) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress)));
+  transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem)) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-42deg * var(--progress)));
   will-change: transform;
 
   @media only screen and (max-width: 1024px) {
