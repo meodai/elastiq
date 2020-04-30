@@ -28,3 +28,5 @@ window.addEventListener('scroll', (e) => {
 
 setInterval(setTimeVars, 1000);
 setTimeVars();
+
+console.log('https://github.com/meodai/elastiq/');
