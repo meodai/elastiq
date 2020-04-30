@@ -271,9 +271,8 @@ h1 {
   pointer-events: none;
 
   @media only screen and (max-width: 1024px) {
+    z-index: -1;
     width: 80%;
-    height: 55vw;
-    clip: rect(auto, auto, auto, auto);
   }
 
   &__image {
