@@ -170,6 +170,10 @@ h1 {
   @media only screen and (max-width : 1024px) {
     transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem + var(--top))) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress)));
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    transform: none;
+  }
 }
 
 .logo__type {
@@ -328,6 +332,9 @@ h1 {
       --progress: var(--minute-progress, 0);
       --c-hand-bg: var(--c-brand);
       transition: 300ms transform cubic-bezier(1, 0, 0, 2);
+      @media (prefers-reduced-motion: reduce) {
+        transition: none;
+      }
     }
 
     &--minute {
