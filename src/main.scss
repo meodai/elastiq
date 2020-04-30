@@ -46,7 +46,7 @@ body {
   overflow: hidden;
 
   @media only screen and (max-width: 1024px) {
-    padding-bottom: calc(55vw);
+    padding-bottom: 55vw;
   }
 
   &__inner {
@@ -271,9 +271,25 @@ h1 {
   pointer-events: none;
 
   @media only screen and (max-width: 1024px) {
-    position: fixed;
-    z-index: -1;
     width: 80%;
+    height: 55vw;
+    clip: rect(auto, auto, auto, auto);
+  }
+
+  &__image {
+    width: 100%;
+
+    @media only screen and (max-width: 1024px) {
+      position: fixed;
+      bottom: 0;
+      width: 80%;
+    }
+  }
+
+  &__clock {
+      position: absolute;
+      bottom: 70%;
+      right: 18%;
   }
 }
 
@@ -282,10 +298,6 @@ h1 {
   --s-hand-diameter: .8rem;
   --s-hand-factor: .8;
 
-  position: absolute;
-  bottom: 21vw;
-  right: 20vw;
-  z-index: 10;
   width: var(--s-clock-diameter);
   height: var(--s-clock-diameter);
   background: var(--c-bg);
@@ -298,10 +310,9 @@ h1 {
     --s-hand-diameter: .8rem;
 
     position: fixed;
-    z-index: -1;
     transform: translate(50%, -50%) scale(.7);
-    bottom: 26vw;
-    right: 20vw;
+    bottom: 30vw;
+    right: 22vw;
   }
 
   &::after {
