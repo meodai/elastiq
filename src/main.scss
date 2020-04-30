@@ -264,7 +264,14 @@ h1 {
 
   p::before,
   p::after {
+    position: relative;
+    top: .75rem;
+    color: var(--c-brand-alt);
     display: inline-block;
+    margin-left: -.75em;
+    margin-right: .25em;
+    font-size: 4rem;
+    line-height: .25;
   }
 
   p::before {
@@ -272,8 +279,9 @@ h1 {
   }
 
   p::after {
-    content: close-quote;
-    margin-left: -.8em; //somehow post-html adds a space and the end of yml content :(
+    content: close-quote; //somehow post-html adds a space and the end of yml content :(
+    top: 2.5rem;
+    margin-left: -.2em;
   }
 }
 
