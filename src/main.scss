@@ -331,7 +331,9 @@ h1 {
     &--second {
       --progress: var(--minute-progress, 0);
       --c-hand-bg: var(--c-brand);
+      will-change: transition;
       transition: 300ms transform cubic-bezier(1, 0, 0, 2);
+
       @media (prefers-reduced-motion: reduce) {
         transition: none;
       }
