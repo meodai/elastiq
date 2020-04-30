@@ -1,5 +1,4 @@
 const $logo = document.querySelector('[data-logo]');
-const $logoWrap = document.querySelector('.logo');
 const $clock = document.querySelector('[data-clock]');
 
 const scroller = () => {
@@ -8,7 +7,7 @@ const scroller = () => {
 
   $logo.style.setProperty('--progress', progress);
   $logo.style.setProperty('--progressMax', progressMax);
-  $logoWrap.style.setProperty('--top', progress * 13 + 'vmax');
+  $logo.style.setProperty('--top', progress * 13 + 'vmax');
 };
 
 const setTimeVars = () => {
