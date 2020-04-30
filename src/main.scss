@@ -259,7 +259,22 @@ h1 {
 }
 
 .recommendation__quote {
+  quotes: '“''”';
   margin-top: 1em;
+
+  p::before,
+  p::after {
+    display: inline-block;
+  }
+
+  p::before {
+    content: open-quote;
+  }
+
+  p::after {
+    content: close-quote;
+    margin-left: -.8em; //somehow post-html adds a space and the end of yml content :(
+  }
 }
 
 .illustration {
