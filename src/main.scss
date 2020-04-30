@@ -54,10 +54,6 @@ body {
     background: var(--c-layout-bg);
     position: relative;
     z-index: 1;
-
-    @media only screen and (max-width: 1024px) {
-      padding-bottom: var(--s-paper-bezel);
-    }
   }
 }
 
@@ -277,7 +273,7 @@ h1 {
     color: var(--c-brand-alt);
     display: inline-block;
     margin-left: -.75em;
-    margin-right: .25em;
+    margin-right: .15em;
     font-size: 4rem;
     line-height: .25;
   }
