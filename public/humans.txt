@@ -23,9 +23,10 @@
 
 # TECHNOLOGY COLOPHON
 
-  CSS, HTML, Vanilla JS
-  parcel.js, normalize.css
-  Netlify, Google Webfonts
+  SCSS, CSS, PostCSS,
+  PostHTML, HTML, Vanilla JS
+  parcel.js, Netlify,
+  Google Webfonts
   metatags.io, svgo, vscode,
   iTerm, FishShell ... :D
 
