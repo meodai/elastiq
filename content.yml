@@ -54,14 +54,19 @@ social:
     name: Twitter
     url: https://twitter.com/meodai/
   -
-    name: Codepen
-    url: https://codepen.io/meodai/
+    name: LinkedIn
+    url: https://www.linkedin.com/in/davidaerne/
+  -
+    name: YouTube
+    url: https://www.youtube.com/user/meodai/videos
+
+code:
   -
     name: Github
     url: https://github.com/meodai/
   -
-    name: LinkedIn
-    url: https://www.linkedin.com/in/davidaerne/
+    name: Codepen
+    url: https://codepen.io/meodai/
   -
     name: Stackoverflow
     url: https://stackoverflow.com/users/157397/meo

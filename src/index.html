@@ -61,7 +61,7 @@
       <p class="intro" aria-label="mission statement">{{ intro }}</p>
 
       <article class="recommendations section">
-        <h2 class="recommendations__title title--sub">Recommendations</h2>
+        <h2 class="recommendations__title title title--sub">Recommendations</h2>
 
         <each loop="quote, index in quotes">
           <aside class="recommendation">
@@ -83,9 +83,17 @@
       </article-->
 
       <article class="social section">
-        <h2 class="social__title title--sub">Social</h2>
+        <h2 class="social__title title title--no-stack title--sub">Social</h2>
 
         <each loop="link, index in social">
+          <a href="{{ link.url }}">{{ link.name }}</a> {{ loop.last ? '' : ' — ' }}
+        </each>
+      </article>
+
+      <article class="code section">
+        <h2 class="social__title title title--no-stack title--sub">Code</h2>
+
+        <each loop="link, index in code">
           <a href="{{ link.url }}">{{ link.name }}</a> {{ loop.last ? '' : ' — ' }}
         </each>
       </article>
