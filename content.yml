@@ -49,6 +49,73 @@ quotes:
     person: Angela Dannhorn
     position: Interaction Designer at Google
 
+projects:
+  -
+    title: Helsana Microsite
+    employer: ginetta
+    type: corporate
+    url: https://www.youtube.com/watch?v=EyuFEHSxG2c
+    description:
+  -
+    title: Crowdhose
+    employer: ginetta
+    type: corporate
+    url: Crowdhose.ch
+    description:
+  -
+    title: Swiss
+    employer: Hinderling & Volkart
+    type: corporate
+    url: swiss.ch
+    description:
+  -
+    title: Migros Magazin
+    employer: ginetta
+    type: corporate
+    url: https://www.migrosmagazin.ch/
+    description:
+
+  -
+    title: Samsung Warables
+    employer:
+    type: corporate
+    url: https://codepen.io/meodai/full/MEqpVL
+
+  -
+    title: Pronydays
+    employer: Elastiq
+    type: cultural
+    url: https://www.pornydays.love/
+
+doodles:
+  Generative Poster I: https://codepen.io/meodai/full/PLMgRz
+  Generative Poster II: https://codepen.io/meodai/full/XQbGQW
+  Generative Poster III: https://codepen.io/meodai/full/xeeKRe
+  Generative Poster IV: https://codepen.io/meodai/full/MRdGYW
+  Generative Poster V: https://codepen.io/meodai/full/PgMQMq
+  Generative Elastiq Logo: https://codepen.io/meodai/full/KKPLbKq
+  Crazy Grid: https://codepen.io/meodai/full/MRroga
+  Smeary Text: https://codepen.io/meodai/full/moYebY
+  Perlin Noise Hair: https://codepen.io/meodai/full/XxzNzR
+  Perlin Noise Hair II: https://codepen.io/meodai/full/JmrvaW
+  Generative Logo based on color: https://codepen.io/meodai/full/RRzNAg
+  Generative 3d Clouds: https://codepen.io/meodai/full/VvMJNV
+  LSD Worm: https://codepen.io/meodai/full/aOdLro
+  Playfull Logo: https://codepen.io/meodai/pen/YvaLzJ
+  Playfull Logo II: https://codepen.io/meodai/full/PxbebR
+  Infinite Bro Clicker: https://codepen.io/meodai/full/QZmjWe
+  Minimal Radio Player: https://codepen.io/meodai/full/xbeePp
+  Misc Hover Animation: https://codepen.io/meodai/full/aQZogo
+  Animated Logo: https://codepen.io/meodai/full/JedRmo
+
+color:
+  Generative Color Harmonies: https://codepen.io/meodai/full/RerqjG
+  Color Palette Mixer: https://codepen.io/meodai/full/GLyGeG
+  List of 18k color names: https://meodai.github.io/color-names/
+  Representation Of 18k color names in different color spaces: https://codepen.io/meodai/full/zdgXJj
+  Color Gradient Generator: https://codepen.io/meodai/full/xyqoEO
+  Color Harmony Tool: https://codepen.io/meodai/full/KagxwW (v2 in the making: https://www.youtube.com/watch?v=GCGUqAQcfFw)
+
 social:
   -
     name: Twitter
