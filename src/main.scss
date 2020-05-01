@@ -275,7 +275,7 @@ h1 {
 
     color: var(--c-brand-alt);
     display: inline-block;
-    margin-top: .31em;
+    margin-top: .25em;
     margin-left: -.3em;
     font-size: 10rem;
     line-height: 0;
@@ -288,6 +288,8 @@ h1 {
 
   p::after {
     content: close-quote;
+    margin-top: .5em;
+    margin-left: -.45em;
   }
 }
 
