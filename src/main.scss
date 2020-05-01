@@ -2,6 +2,7 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 /*# sourceMappingURL=normalize.min.css.map */
 
 :root {
+
   --c-bg: #fff;
   --c-layout-bg: #f0f0e6;
   --c-text: #000;
@@ -266,7 +267,6 @@ h1 {
   quotes: '“''”';
   margin-top: 1em;
 
-  /*
   text-indent: 1ex;
 
   p::before,
@@ -289,7 +289,6 @@ h1 {
   p::after {
     content: close-quote;
   }
-  */
 }
 
 .illustration {
