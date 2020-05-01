@@ -266,16 +266,20 @@ h1 {
   quotes: '“''”';
   margin-top: 1em;
 
+  /*
+  text-indent: 1ex;
+
   p::before,
   p::after {
-    position: relative;
-    top: .75rem;
+    position: absolute;
+
     color: var(--c-brand-alt);
     display: inline-block;
-    margin-left: -.75em;
-    margin-right: .15em;
-    font-size: 4rem;
-    line-height: .25;
+    margin-top: .31em;
+    margin-left: -.3em;
+    font-size: 10rem;
+    line-height: 0;
+    z-index: -1;
   }
 
   p::before {
@@ -283,10 +287,9 @@ h1 {
   }
 
   p::after {
-    content: close-quote; //somehow post-html adds a space and the end of yml content :(
-    top: 2.5rem;
-    margin-left: -.2em;
+    content: close-quote;
   }
+  */
 }
 
 .illustration {
