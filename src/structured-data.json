@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Elastiq",
+  "legalName": "Elastiq GmbH",
+  "url": "https://elastiq.ch/",
+  "logo": "https://elastiq.ch/logo.png",
+  "foundingDate": "2016",
+  "founders": [{
+    "@type": "Person",
+    "name": "David Aerne"
+  }],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Zentralstrasse 43",
+    "addressLocality": "Zürich",
+    "addressRegion": "Zürich",
+    "postalCode": "8003",
+    "addressCountry": "CH"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Owner / Webmaster",
+    "telephone": "[+41788958119]",
+    "email": "david@elastiq.ch"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/davidaerne/",
+    "https://www.instagram.com/meodai.jpg/",
+    "https://github.com/meodai/",
+    "https://codepen.io/meodai/",
+    "https://stackoverflow.com/users/157397/meo",
+    "https://twitter.com/meodai",
+    "https://www.pinterest.ch/meodai/"
+  ]
+}
