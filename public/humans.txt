@@ -1,0 +1,31 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+              ╳ ▟▗
+          ▚    ▟  ▚     ▞
+          ▐ ▞ ▞▙ ▟▘▚   ▟▚  ╳
+          ▟▚▐▞ █ █  ▋ ▟  ▚
+        ╳ ▋ ▛  ▜ █▀▀▛▟ ╳ ▞
+          ▚ ▝▎╳ ▜▞ ▂ ▜  ▞   ╳
+          ▕      ▚▚ ▛ ▜▞
+            ╳   ╺▂▞▞   ▎
+                   ▎
+
+  David Aerne -- Webmaster -- @meodai
+
+# THANKS
+
+  David Darx -- Design Reviews -- @daviddarx
+  Florian Schulz -- Design Reviews -- @getflourish
+  Philipp Dornbierer -- Illustrator -- @yehteh
+
+# TECHNOLOGY COLOPHON
+
+  CSS, HTML, Vanilla JS
+  parcel.js, normalize.css
+  Netlify, Google Webfonts
+  metatags.io, svgo, vscode,
+  iTerm, FishShell ... :D
+

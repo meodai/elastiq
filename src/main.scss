@@ -2,6 +2,7 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 /*# sourceMappingURL=normalize.min.css.map */
 
 :root {
+
   --c-bg: #fff;
   --c-layout-bg: #f0f0e6;
   --c-text: #000;
@@ -262,11 +263,11 @@ h1 {
   font-size: var(--t-slight);
 }
 
+/* looks fancy but too repetitiv
 .recommendation__quote {
   quotes: '“''”';
   margin-top: 1em;
 
-  /*
   text-indent: 1ex;
 
   p::before,
@@ -275,7 +276,7 @@ h1 {
 
     color: var(--c-brand-alt);
     display: inline-block;
-    margin-top: .31em;
+    margin-top: .25em;
     margin-left: -.3em;
     font-size: 10rem;
     line-height: 0;
@@ -288,9 +289,10 @@ h1 {
 
   p::after {
     content: close-quote;
+    margin-top: .5em;
+    margin-left: -.45em;
   }
-  */
-}
+}*/
 
 .illustration {
   position: absolute;
