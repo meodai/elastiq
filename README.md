@@ -1,7 +1,4 @@
 # elastiq.ch
-company website
-
-# exalt.biz
 https://elastiq.ch/ website
 
 ## edit contents
