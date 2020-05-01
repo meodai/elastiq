@@ -11,6 +11,7 @@
   --s-page-bezel: 3rem;
   --s-paper-bezel: 6rem;
   --s-subtitle-stack: 2rem;
+  --s-content-stack: var(--s-paper-bezel);
 
   @media only screen and (max-width: 1024px) {
     --s-page-bezel: 2rem;
@@ -225,7 +226,7 @@ h1 {
 .section {
   font-size: var(--t-copy);
   max-width: 75rem;
-  margin-top: 5rem;
+  margin-top: var(--s-content-stack);
 
   a {
     position: relative;
@@ -233,19 +234,17 @@ h1 {
   }
 }
 
-.social {
-  position: relative;
-  font-size: var(--t-copy);
+.social,
+.code {
   color: var(--c-brand-w3a);
 }
-
 
 .recommendation {
   position: relative;
   z-index: 2;
 
   & + & {
-    margin-top: 5rem;
+    margin-top: calc(var(--s-content-stack) * 0.8);
   }
 }
 
