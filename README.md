@@ -1,6 +1,8 @@
 # elastiq.ch
 https://elastiq.ch/ website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1badacb4-da50-4464-a79e-d102bd32dc1d/deploy-status)](https://app.netlify.com/sites/boring-euclid-25977c/deploys)
+
 ## edit contents
 [edit website here](https://github.com/meodai/elastiq/blob/master/content.yml)
 
