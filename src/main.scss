@@ -380,6 +380,7 @@ h1 {
     margin-left: calc(var(--s-hand-diameter) * -0.5);
     //transform: rotate(calc(var(--progress) * 360deg));
     will-change: transform;
+    animation: rotate 60s infinite steps(60);
 
     &::after {
       content: '';
@@ -396,27 +397,20 @@ h1 {
     &--second {
       --progress: var(--minute-progress, 0);
       --c-hand-bg: var(--c-brand);
+      animation-duration: 60s;
     }
 
     &--minute {
       --progress: var(--hour-progress, 0);
+      animation-duration: 3600s;
     }
 
     &--hour {
       --progress: var(--day-progress, 0);
       --s-hand-factor: .55;
+      animation-duration: 43200s;
     }
   }
-}
-
-.clock__hand--hour {
-  animation: rotate 43200s infinite steps(60);
-}
-.clock__hand--minute {
-  animation: rotate 3600s infinite steps(60);
-}
-.clock__hand--second {
-  animation: rotate 60s infinite steps(60); // steps(60)
 }
 
 @keyframes rotate {

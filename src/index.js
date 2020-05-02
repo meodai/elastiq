@@ -38,6 +38,7 @@ window.addEventListener('scroll', () => {
 //setInterval(setTimeVars, 1000); // now handled in CSS only
 setTimeVars();
 setTimeout(setTimeVars, 1000); //because some time the DOM ist just nor ready yet ;)
+
 scroller();
 
 console.log('https://github.com/meodai/elastiq/');
