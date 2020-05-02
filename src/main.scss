@@ -1,6 +1,4 @@
-
 :root {
-
   --c-bg: #fff;
   --c-layout-bg: #f0f0e6;
   --c-text: #000;
@@ -424,9 +422,9 @@ h1 {
 
 .footer {
   position: absolute;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   height: calc(20rem + var(--s-page-bezel));
   clip: rect(auto, auto, auto, auto);
 }
