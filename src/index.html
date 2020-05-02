@@ -107,7 +107,7 @@
 
         <each loop="quote, index in quotes">
           <aside class="recommendation">
-            <h3 class="recommendation__person">{{ quote.person }}</h3>
+            <h3 class="recommendation__person"><a href="{{ quote.personUrl }}">{{ quote.person }}</a></h3>
             <h4 class="recommendation__title">{{ quote.position }}</h4>
             <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
               <p>{{{ quote.text }}}</p>
