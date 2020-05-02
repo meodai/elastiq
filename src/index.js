@@ -1,5 +1,6 @@
 const $logo = document.querySelector('[data-logo]');
 const $clock = document.querySelector('[data-clock]');
+let isScrolling = false;
 
 const scroller = () => {
   const progress = window.scrollY / window.innerHeight;
@@ -8,6 +9,7 @@ const scroller = () => {
   $logo.style.setProperty('--progress', progress);
   $logo.style.setProperty('--progressMax', progressMax);
   $logo.style.setProperty('--top', progress * 13 + 'vmax');
+  isScrolling = false;
 };
 
 const setTimeVars = () => {
@@ -22,8 +24,15 @@ const setTimeVars = () => {
   $clock.style.setProperty('--day-progress', dayProgress);
 };
 
+
 window.addEventListener('scroll', () => {
-  requestAnimationFrame(scroller);
+  if (!isScrolling) {
+    isScrolling = true;
+    requestAnimationFrame(scroller);
+  }
+}, {
+  capture: true,
+  passive: true,
 });
 
 setInterval(setTimeVars, 1000);
