@@ -8,6 +8,15 @@
   --c-brand-w3a: #d60b00;
   --c-brand-alt: #eca6ca;
 
+  /*
+  @media (prefers-color-scheme: dark) {
+    --c-bg: #212121;
+    --c-layout-bg: #444;
+    --c-text: #fff;
+    --c-brand-alt: turquoise;
+    --c-brand-w3a: turquoise;
+  } fuck you and you dark mode */
+
   --s-page-bezel: 3rem;
   --s-paper-bezel: 6rem;
   --s-subtitle-stack: 2rem;
@@ -26,7 +35,7 @@
   font-size: 62.5%; // 10px
   line-height: 1.7;
   font-family: 'Space Mono', monospace;
-
+  color: var(--c-text);
   background: var(--c-bg);
 }
 
