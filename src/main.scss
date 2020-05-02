@@ -387,12 +387,6 @@ h1 {
     &--second {
       --progress: var(--minute-progress, 0);
       --c-hand-bg: var(--c-brand);
-
-      //transition: 300ms transform cubic-bezier(1, 0, 0, 2);
-
-      @media (prefers-reduced-motion: reduce) {
-        transition: none;
-      }
     }
 
     &--minute {
@@ -418,7 +412,7 @@ h1 {
 
 @keyframes rotate {
   0% {
-      transform: rotateZ(calc(var(--progress) * 360deg));
+    transform: rotateZ(calc(var(--progress) * 360deg));
   }
   100% {
     transform: rotateZ(calc(var(--progress) * 360deg + 360deg));
