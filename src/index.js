@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
   passive: true,
 });
 
-setInterval(setTimeVars, 1000);
+//setInterval(setTimeVars, 1000); // now handled in CSS only
 
 setTimeVars();
 scroller();

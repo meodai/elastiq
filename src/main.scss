@@ -369,7 +369,8 @@ h1 {
     height: var(--s-hand-diameter);
     margin-top: calc(var(--s-hand-diameter) * -0.5);
     margin-left: calc(var(--s-hand-diameter) * -0.5);
-    transform: rotate(calc(var(--progress) * 360deg));
+    //transform: rotate(calc(var(--progress) * 360deg));
+    will-change: transform;
 
     &::after {
       content: '';
@@ -386,8 +387,8 @@ h1 {
     &--second {
       --progress: var(--minute-progress, 0);
       --c-hand-bg: var(--c-brand);
-      will-change: transition;
-      transition: 300ms transform cubic-bezier(1, 0, 0, 2);
+
+      //transition: 300ms transform cubic-bezier(1, 0, 0, 2);
 
       @media (prefers-reduced-motion: reduce) {
         transition: none;
@@ -402,6 +403,25 @@ h1 {
       --progress: var(--day-progress, 0);
       --s-hand-factor: .55;
     }
+  }
+}
+
+.clock__hand--hour {
+  animation: rotate 43200s infinite steps(60);
+}
+.clock__hand--minute {
+  animation: rotate 3600s infinite steps(60);
+}
+.clock__hand--second {
+  animation: rotate 60s infinite steps(60); // steps(60)
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotateZ(calc(var(--progress) * 360deg));
+  }
+  100% {
+    transform: rotateZ(calc(var(--progress) * 360deg + 360deg));
   }
 }
 
