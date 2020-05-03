@@ -70,10 +70,16 @@ body {
 a {
   color: var(--c-text);
   text-decoration: none;
+  //text-decoration-line: underline;
+  //@extend: wavy;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--c-brand-alt);
+  //text-underline-position: under;
+  color: #1abc9c;
 
   &:hover {
     text-decoration-line: underline;
-    //text-decoration-style: wavy;
+    text-decoration-style: unset; // soooo buggy in chrome
     text-decoration-color: var(--c-brand);
   }
 }
