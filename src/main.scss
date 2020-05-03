@@ -174,7 +174,6 @@ h1 {
   overflow: hidden;
   user-select: none;
   pointer-events: none;
-  will-change: top;
 }
 
 .logo__symbol,
@@ -189,7 +188,7 @@ h1 {
 
 .logo__symbol {
   position: fixed;
-  width: 600%;
+  width: 400%;
   height: auto;
   z-index: 1;
   margin-top: var(--s-page-bezel);
@@ -232,8 +231,6 @@ h1 {
 .elastiq {
   fill: none;
   stroke: var(--c-brand-alt);
-  stroke-linecap: round;
-  stroke-linejoin: round;
   stroke-width: 11.4px;
 }
 
