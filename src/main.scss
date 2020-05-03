@@ -35,6 +35,9 @@
   font-family: 'Space Mono', monospace;
   color: var(--c-text);
   background: var(--c-bg);
+
+  -webkit-font-smoothing: antialiased;
+
 }
 
 ::selection {
