@@ -256,18 +256,27 @@ h1 {
     margin-top: calc(var(--s-content-stack) * 0.8);
   }
 }
+.recommendation__person {
+  font-size: var(--t-vip);
+  font-weight: normal;
+  font-style: italic;
 
+  a {
+    color: var(--c-text);
+  }
+}
 .recommendation__title,
 .recommendation__person {
   position: relative;
-  font-size: var(--t-copy);
 }
 
 .recommendation__title {
   font-weight: normal;
   color: var(--c-brand-w3a);
+  font-size: var(--t-copy);
   font-size: var(--t-slight);
   margin-bottom: 1em;
+  margin-top: -1ex;
 }
 
 /* looks fancy but too repetitiv
