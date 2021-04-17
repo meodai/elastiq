@@ -44,8 +44,9 @@ document.querySelector('[data-videostart]').addEventListener('click', e => {
     $body.classList.remove('is-playing');
   })
   $video.play();
+  e.preventDefault();
+});
 
-})
 //setInterval(setTimeVars, 1000); // now handled in CSS only
 setTimeVars();
 setTimeout(setTimeVars, 1000); //because some time the DOM ist just nor ready yet ;)
