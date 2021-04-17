@@ -75,7 +75,7 @@
 </head>
 
 <body>
-  <div class="page video-running">
+  <div class="page">
     <h1 class="logo__type logo__type--bg">Elastiq</h1>
     <div aria-hidden="true" class="page__inner">
       <div data-logo class="logo">
@@ -100,10 +100,13 @@
         </address>
       </footer>
 
-      <p class="intro" aria-label="mission statement">{{ intro }}</p>
+      <p class="intro" aria-label="mission statement">{{{ introhtml }}}</p>
 
       <div class="video">
-        <video class="video__element" autoplay muted src="../public/ehr_1920_4.mp4"></video>
+        <video class="video__element" muted>
+          <source src="../public/ehr_1280_2.mp4" type="video/mp4" media="all and (max-width: 1024px)">
+          <source src="../public/ehr_1920_4.mp4" type="video/mp4">
+        </video>
       </div>
       <article class="recommendations section">
         <h2 class="recommendations__title title title--sub">Recommendations</h2>
