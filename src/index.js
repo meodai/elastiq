@@ -35,6 +35,15 @@ window.addEventListener('scroll', () => {
   passive: true,
 });
 
+const $video = document.querySelector('.video__element');
+
+console.log($video.duration)
+$video.addEventListener('play', () => {
+  setTimeout(() => {
+    document.querySelector('.video-running').classList.remove('video-running');
+  }, 9000 - 500);
+});
+
 //setInterval(setTimeVars, 1000); // now handled in CSS only
 setTimeVars();
 setTimeout(setTimeVars, 1000); //because some time the DOM ist just nor ready yet ;)

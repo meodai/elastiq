@@ -13,7 +13,7 @@
     --c-text: #fff;
     --c-brand-alt: turquoise;
     --c-brand-w3a: turquoise;
-  } fuck you and you dark mode */
+  } fuck you and your dark mode */
 
   --s-page-bezel: 3rem;
   --s-paper-bezel: 6rem;
@@ -112,6 +112,35 @@ h1 {
   @media only screen and (max-width: 1024px) {
     margin-top: calc(var(--s-page-bezel) + var(--s-paper-bezel));
     margin-bottom: calc(var(--s-page-bezel) + var(--s-paper-bezel) * 2);
+  }
+}
+
+.video-running {
+  .nametag,
+  .address,
+  .intro,
+  .logo__type,
+  .logo__symbol {
+    opacity: 0;
+  }
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  left: 0;
+  height: calc(100vh - var(--s-paper-bezel));
+  right: 0;
+  z-index: -1;
+  background: #212121;
+
+  &__element {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
