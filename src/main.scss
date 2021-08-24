@@ -71,10 +71,16 @@ body {
 a {
   color: var(--c-text);
   text-decoration: none;
+  //text-decoration-line: underline;
+  //@extend: wavy;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--c-brand-alt);
+  //text-underline-position: under;
+  color: #1abc9c;
 
   &:hover {
     text-decoration-line: underline;
-    //text-decoration-style: wavy;
+    text-decoration-style: unset; // soooo buggy in chrome
     text-decoration-color: var(--c-brand);
   }
 }
@@ -195,7 +201,6 @@ h1 {
   overflow: hidden;
   user-select: none;
   pointer-events: none;
-  will-change: top;
 }
 
 .logo__symbol,
@@ -210,7 +215,7 @@ h1 {
 
 .logo__symbol {
   position: fixed;
-  width: 600%;
+  width: 400%;
   height: auto;
   z-index: 1;
   margin-top: var(--s-page-bezel);
@@ -253,8 +258,7 @@ h1 {
 .elastiq {
   fill: none;
   stroke: var(--c-brand-alt);
-  stroke-linecap: round;
-  stroke-linejoin: round;
+
   stroke-width: 11.4px;
 }
 
