@@ -210,14 +210,16 @@ h1 {
 
 .logo__symbol {
   position: fixed;
-  width: 600%;
+  width: 231%;
   height: auto;
   z-index: 1;
-  margin-top: var(--s-page-bezel);
+  margin-top: calc(var(--s-page-bezel) + .9rem);
+  margin-left: .9rem;
 
   transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem)) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-42deg * var(--progress)));
   will-change: transform;
   //transition: 10ms transform linear;
+  overflow: visible;
 
   @media only screen and (max-width: 1024px) {
     transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem + var(--top))) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress)));
@@ -452,10 +454,10 @@ h1 {
 
 @keyframes rotate {
   0% {
-    transform: rotateZ(calc(var(--progress) * 360deg));
+    transform: rotateZ(calc(var(--progress, 0) * 360deg));
   }
   100% {
-    transform: rotateZ(calc(var(--progress) * 360deg + 360deg));
+    transform: rotateZ(calc(var(--progress, 0) * 360deg + 360deg));
   }
 }
 

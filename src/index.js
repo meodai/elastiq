@@ -49,7 +49,7 @@ document.querySelector('[data-videostart]').addEventListener('click', e => {
 
 //setInterval(setTimeVars, 1000); // now handled in CSS only
 setTimeVars();
-setTimeout(setTimeVars, 1000); //because some time the DOM ist just nor ready yet ;)
+setTimeout(setTimeVars, 1000); //because sometimes the DOM ist just nor ready yet ;)
 
 scroller();
 
