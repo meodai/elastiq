@@ -67,6 +67,14 @@ quotes:
     position: Lead UI/UX Designer at Thanks but no thanks
     personUrl: https://vanderlanth.io/
 
+  -
+    url: https://www.linkedin.com/in/davidaerne/
+    text: >
+      David is the kind of person who's creativity comes alive through order. His art is a mixture of math and language and he'll manage to transform all kinds of messes into organized beauty. No matter if it's about untangling non-maintainable code or coming up with crucial language in a design system or coding visuals to transform hard-to-grasp concepts into understandable images. As an excellent communicator he not only manages to transform his ideas into scalable code, but also eloquently let's people into his head so they can follow along. He is a talented teacher and an uplifting peer that easily slots into a team, able to bridge a gap between frontend and design.
+    person: Myriam Frisano
+    position: Senior Frontend Engineer at ZKB
+    personUrl: https://www.linkedin.com/in/myriamfrisano/
+
 projects:
   -
     title: Helsana Microsite
