@@ -14,10 +14,10 @@ const scroller = () => {
 
 const setTimeVars = () => {
   const now = new Date();
-  const timeInMilliseconds = now.getTime() - now.getTimezoneOffset() * 60000;
-  const minuteProgress = (timeInMilliseconds / 1000 / 60) % 60;
-  const hourProgress = (timeInMilliseconds / 1000 / 60 / 60) % 24;
-  const dayProgress = now.getHours() / 24 * 2;
+
+  const minuteProgress = now.getSeconds() + now.getMilliseconds() / 1000;
+  const hourProgress = (now.getMinutes() + minuteProgress / 60) / 60;
+  const dayProgress = (now.getHours() + hourProgress) / 24 * 2;
 
   $clock.style.setProperty('--minute-progress', minuteProgress);
   $clock.style.setProperty('--hour-progress', hourProgress);
