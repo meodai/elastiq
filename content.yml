@@ -197,6 +197,9 @@ social:
     name: Twitter
     url: https://twitter.com/meodai/
   -
+    name: Bsky
+    url: https://bsky.app/profile/meodai.bsky.social
+  -
     name: LinkedIn
     url: https://www.linkedin.com/in/davidaerne/
   -
@@ -207,9 +210,6 @@ code:
   -
     name: Github
     url: https://github.com/meodai/
-  -
-    name: Codepen
-    url: https://codepen.io/meodai/
   -
     name: Stackoverflow
     url: https://stackoverflow.com/users/157397/meo
@@ -249,11 +249,11 @@ clients:
     name: Credit Suisse
     url: https://www.credit-suisse.com/
   -
-    name: Kanton Aargau
-    url: https://www.ag.ch/
-  -
     name: Stairlin
     url: https://www.stairlin.com/
+  -
+    name: Dfinity
+    url: https://dfinity.org/
 
 employers:
   -
@@ -286,4 +286,5 @@ address:
 buzzwords: >
   ux design, front end, frontend, web development, interaction design,
   Zürich, front end developer, frontend developer, interaction developer,
-  React, vue.js, vanilla js, javascript, css, html
+  React, vue.js, vanilla js, javascript, css, html, color, generative design,
+  design tokens, design system, design systems, web design,
