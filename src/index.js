@@ -35,18 +35,6 @@ window.addEventListener('scroll', () => {
   passive: true,
 });
 
-const $video = document.querySelector('.video__element');
-const $body = document.querySelector('body');
-
-document.querySelector('[data-videostart]').addEventListener('click', e => {
-  $body.classList.add('is-playing');
-  $video.addEventListener('ended', () => {
-    $body.classList.remove('is-playing');
-  })
-  $video.play();
-  e.preventDefault();
-});
-
 //setInterval(setTimeVars, 1000); // now handled in CSS only
 setTimeVars();
 setTimeout(setTimeVars, 1000); //because sometimes the DOM ist just nor ready yet ;)

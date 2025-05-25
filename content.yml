@@ -5,7 +5,7 @@ intro: >
   my passion and enthusiasm as a tool to promote ideas and skills.
 
 introhtml: >
-  Exploring ways to <a data-videostart class="intro__link" href="#video">blend code and design</a> while raising the quality and creative freedom of both. I use
+  Exploring ways to blend code and design while raising the quality and creative freedom of both. I use
   my passion and enthusiasm as a tool to promote ideas and skills.
 
 quotes:
@@ -194,8 +194,8 @@ color:
 
 social:
   -
-    name: Twitter
-    url: https://twitter.com/meodai/
+    name: X
+    url: https://x.com/meodai/
   -
     name: Bsky
     url: https://bsky.app/profile/meodai.bsky.social

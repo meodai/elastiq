@@ -179,6 +179,12 @@ h1 {
     @media only screen and (max-width: 1024px) {
       display:  none;
     }
+
+    @media (prefers-color-scheme: dark) {
+      &, a {
+        color: var(--c-layout-bg);
+      }
+    }
   }
 }
 
