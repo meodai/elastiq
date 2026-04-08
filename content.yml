@@ -202,14 +202,18 @@ social:
   -
     name: LinkedIn
     url: https://www.linkedin.com/in/davidaerne/
-  -
-    name: Instagram
-    url: https://www.instagram.com/meodai.jpg/
 
 code:
   -
     name: Github
     url: https://github.com/meodai/
+  -
+    name: Codepen
+    url: https://codepen.io/meodai/
+  -
+    name: Fxhash
+    url: https://www.fxhash.xyz/u/meodai
+
   -
     name: Stackoverflow
     url: https://stackoverflow.com/users/157397/meo
