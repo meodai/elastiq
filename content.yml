@@ -81,6 +81,11 @@ research:
     url: https://charcuterie.elastiq.ch/
     year: 2026
     description: Exploring embeddings by building a visual explorer for discovering Unicode characters, scripts, symbols, and related glyphs.
+    mentions:
+      -
+        label: Hacker News front page
+        links:
+          - https://news.ycombinator.com/item?id=47709158
   -
     title: Heerich
     url: https://meodai.github.io/heerich/
@@ -136,11 +141,22 @@ research:
     url: https://meodai.github.io/poline/
     year: 2023
     description: A micro-library for generating color palettes by interpolating HSL in cartesian space.
+    mentions:
+      -
+        label: Hacker News front page
+        links:
+          - https://news.ycombinator.com/item?id=34662722
+          - https://news.ycombinator.com/item?id=44279569
   -
     title: Color Name API
     url: https://meodai.github.io/color-name-api/
     year: 2022
     description: Most Popular color-name REST API returning color names for any given color value.
+    mentions:
+      -
+        label: Hacker News front page
+        links:
+          - https://news.ycombinator.com/item?id=44317291
   -
     title: Rampensau
     url: https://meodai.github.io/rampensau/
@@ -166,6 +182,15 @@ research:
     url: https://github.com/meodai/color-names
     year: 2017
     description: A curated dataset of more than 30,000 color names collected and invented over the years.
+    mentions:
+      -
+        label: CodePen demo
+        links:
+          - https://codepen.io/meodai/full/zdgXJj/
+      -
+        label: Hacker News front page
+        links:
+          - https://news.ycombinator.com/item?id=45748816
 
 doodles:
   -

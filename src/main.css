@@ -91,6 +91,10 @@ h1 {
   font-weight: normal;
 }
 
+p {
+  text-wrap: balance;
+}
+
 .title--sub {
   font-size: var(--t-slight);
   color: var(--c-brand-w3a);
