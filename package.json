@@ -4,7 +4,7 @@
   "description": "company website",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html",
+    "start": "rm -rf .cache && parcel ./src/index.html",
     "build": "parcel build ./src/*.html --public-url https://www.elastiq.ch",
     "test": "npm run build",
     "pretest": "npm run lint",
