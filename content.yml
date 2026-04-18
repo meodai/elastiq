@@ -140,12 +140,12 @@ research:
     title: Color Name API
     url: https://meodai.github.io/color-name-api/
     year: 2022
-    description: REST API returning color names for any given color value.
+    description: Most Popular color-name REST API returning color names for any given color value.
   -
     title: Rampensau
     url: https://meodai.github.io/rampensau/
     year: 2022
-    description: Palette generation using hue cycling and easing functions.
+    description: Palette generation library using hue cycling and easing functions.
   -
     title: Color Description
     url: https://words.github.io/color-description/
@@ -155,55 +155,17 @@ research:
     title: Parrot
     url: https://parrot.color.pizza/
     year: 2021
-    description: A bot that tweets random colors and lets you invent new ones.
+    description: A bot that (used to) tweet random colors and let you invent new ones.
   -
     title: Farbvelo
     url: https://farbvelo.elastiq.ch/
     year: 2020
-    description: Random color palette generator cycling through hue ranges.
+    description: Generative color palette generator cycling through hue ranges.
   -
     title: Color Names
     url: https://github.com/meodai/color-names
     year: 2017
-    description: 30k+ handpicked color names with smart auto-naming for any value.
-
-projects:
-  -
-    title: Helsana Microsite
-    employer: ginetta
-    type: corporate
-    url: https://www.youtube.com/watch?v=EyuFEHSxG2c
-    description:
-  -
-    title: Crowdhose
-    employer: ginetta
-    type: corporate
-    url: Crowdhose.ch
-    description:
-  -
-    title: Swiss
-    employer: Hinderling & Volkart
-    type: corporate
-    url: swiss.ch
-    description:
-  -
-    title: Migros Magazin
-    employer: ginetta
-    type: corporate
-    url: https://www.migrosmagazin.ch/
-    description:
-
-  -
-    title: Samsung Warables
-    employer:
-    type: corporate
-    url: https://codepen.io/meodai/full/MEqpVL
-
-  -
-    title: Pronydays
-    employer: Elastiq
-    type: cultural
-    url: https://www.pornydays.love/
+    description: Collection of 30k+ color names, meticulously collected and invented over the years.
 
 doodles:
   -
