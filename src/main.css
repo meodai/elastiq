@@ -6,38 +6,40 @@
   --c-brand-w3a: #d60b00;
   --c-brand-alt: #eca6ca;
 
-
-  @media (prefers-color-scheme: dark) {
-    --c-bg: #eca6ca;
-    --c-layout-bg: #202126;
-    --c-text: #fff;
-    --c-brand-w3a: #eca6ca;
-    --c-brand: #f04e45;
-  }
-
   --s-page-bezel: 3rem;
   --s-paper-bezel: 6rem;
   --s-subtitle-stack: 2rem;
   --s-content-stack: var(--s-paper-bezel);
-
-  @media only screen and (max-width: 1024px) {
-    --s-page-bezel: 2rem;
-    --s-paper-bezel: var(--s-page-bezel);
-  }
 
   --t-slight: 1.4rem;
   --t-copy: 1.8rem;
   --t-copy--small: 1.6rem;
   --t-vip: calc(1.5rem + 1.5vw);
 
-  font-size: 62.5%; // 10px
+  font-size: 62.5%; /* 10px */
   line-height: 1.7;
   font-family: 'Space Mono', monospace;
   color: var(--c-text);
   background: var(--c-bg);
 
   -webkit-font-smoothing: antialiased;
+}
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #eca6ca;
+    --c-layout-bg: #202126;
+    --c-text: #fff;
+    --c-brand-w3a: #eca6ca;
+    --c-brand: #f04e45;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    --s-page-bezel: 2rem;
+    --s-paper-bezel: var(--s-page-bezel);
+  }
 }
 
 ::selection {
@@ -55,28 +57,29 @@ body {
   position: relative;
   padding: var(--s-page-bezel) var(--s-page-bezel) calc(20rem + var(--s-page-bezel));
   overflow: hidden;
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .page {
     padding-bottom: 55vw;
   }
+}
 
-  &__inner {
-    padding: var(--s-paper-bezel) var(--s-paper-bezel) calc(var(--s-paper-bezel) + 4rem);
-    background: var(--c-layout-bg);
-    position: relative;
-    z-index: 1;
-  }
+.page__inner {
+  padding: var(--s-paper-bezel) var(--s-paper-bezel) calc(var(--s-paper-bezel) + 4rem);
+  background: var(--c-layout-bg);
+  position: relative;
+  z-index: 1;
 }
 
 a {
   color: var(--c-text);
   text-decoration: none;
+}
 
-  &:hover {
-    text-decoration-line: underline;
-    //text-decoration-style: wavy;
-    text-decoration-color: var(--c-brand);
-  }
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--c-brand);
 }
 
 h1, h2, h3, h4, p, blockquote {
@@ -109,13 +112,15 @@ h1 {
   font-size: 4.5rem;
   font-size: var(--t-vip);
   max-width: 150rem;
+}
 
-  &__link {
-    text-decoration: underline;
-    text-decoration-color: var(--c-brand);
-  }
+.intro__link {
+  text-decoration: underline;
+  text-decoration-color: var(--c-brand);
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .intro {
     margin-top: calc(var(--s-page-bezel) + var(--s-paper-bezel));
     margin-bottom: calc(var(--s-page-bezel) + var(--s-paper-bezel) * 2);
   }
@@ -132,14 +137,14 @@ h1 {
   z-index: -1;
   background: #212121;
   border: var(--s-page-bezel) solid var(--c-bg);
+}
 
-  &__element {
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
+.video__element {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .banner {
@@ -147,8 +152,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   margin-top: -1ex;
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .banner {
     flex-direction: column;
     height: 65vh;
     flex-wrap: nowrap;
@@ -170,21 +177,24 @@ h1 {
   z-index: 2;
   font-size: var(--t-slight);
   white-space: nowrap;
+}
 
-  &--footer {
-    position: fixed;
-    bottom: var(--s-paper-bezel);
-    padding-left: calc(var(--s-paper-bezel) + var(--s-page-bezel));
+.address--footer {
+  position: fixed;
+  bottom: var(--s-paper-bezel);
+  padding-left: calc(var(--s-paper-bezel) + var(--s-page-bezel));
+}
 
-    @media only screen and (max-width: 1024px) {
-      display:  none;
-    }
+@media only screen and (max-width: 1024px) {
+  .address--footer {
+    display: none;
+  }
+}
 
-    @media (prefers-color-scheme: dark) {
-      &, a {
-        color: var(--c-layout-bg);
-      }
-    }
+@media (prefers-color-scheme: dark) {
+  .address--footer,
+  .address--footer a {
+    color: var(--c-layout-bg);
   }
 }
 
@@ -208,8 +218,11 @@ h1 {
 .logo__type {
   top: 50vh;
   left: 50%;
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .logo__symbol,
+  .logo__type {
     top: 28vh;
   }
 }
@@ -221,17 +234,19 @@ h1 {
   z-index: 1;
   margin-top: calc(var(--s-page-bezel) + .9rem);
   margin-left: .9rem;
-
   transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem)) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-42deg * var(--progress)));
   will-change: transform;
-  //transition: 10ms transform linear;
   overflow: visible;
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .logo__symbol {
     transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem + var(--top))) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress)));
   }
+}
 
-  @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
+  .logo__symbol {
     position: absolute;
     transform: translate(-50%, -50%) scale(0.3);
   }
@@ -248,10 +263,10 @@ h1 {
   line-height: 1;
   color: var(--c-brand);
   transform: translate(-50%, -50%);
+}
 
-  span {
-    color: transparent;
-  }
+.logo__type span {
+  color: transparent;
 }
 
 .logo__type--bg {
@@ -274,11 +289,11 @@ h1 {
   font-size: var(--t-copy);
   max-width: 75rem;
   margin-top: var(--s-content-stack);
+}
 
-  a {
-    position: relative;
-    z-index: 2;
-  }
+.section a {
+  position: relative;
+  z-index: 2;
 }
 
 .sections-row {
@@ -286,29 +301,31 @@ h1 {
   align-items: flex-start;
   gap: var(--s-paper-bezel);
   margin-top: var(--s-content-stack);
+}
 
-  > .section {
-    margin-top: 0;
-  }
+.sections-row > .section {
+  margin-top: 0;
+}
 
-  .recommendations {
-    flex: 1 1 auto;
-    min-width: 0;
-  }
+.sections-row .recommendations {
+  flex: 1 1 auto;
+  min-width: 0;
+}
 
-  .research {
-    flex: 0 0 28rem;
-  }
+.sections-row .research {
+  flex: 0 0 28rem;
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .sections-row {
     flex-direction: column;
     gap: var(--s-content-stack);
+  }
 
-    .research,
-    .recommendations {
-      flex: 1 1 auto;
-      width: 100%;
-    }
+  .sections-row .research,
+  .sections-row .recommendations {
+    flex: 1 1 auto;
+    width: 100%;
   }
 }
 
@@ -316,14 +333,14 @@ h1 {
   display: block;
   text-decoration: none;
   color: inherit;
+}
 
-  & + & {
-    margin-top: calc(var(--s-subtitle-stack) * 1.1);
-  }
+.research__item + .research__item {
+  margin-top: calc(var(--s-subtitle-stack) * 1.1);
+}
 
-  &:hover {
-    text-decoration: none;
-  }
+.research__item:hover {
+  text-decoration: none;
 }
 
 .research__title {
@@ -365,20 +382,22 @@ h1 {
 .recommendation {
   position: relative;
   z-index: 2;
-
-  & + & {
-    margin-top: calc(var(--s-content-stack) * 0.8);
-  }
 }
+
+.recommendation + .recommendation {
+  margin-top: calc(var(--s-content-stack) * 0.8);
+}
+
 .recommendation__person {
   font-size: var(--t-vip);
   font-weight: normal;
   font-style: italic;
-
-  a {
-    color: var(--c-text);
-  }
 }
+
+.recommendation__person a {
+  color: var(--c-text);
+}
+
 .recommendation__title,
 .recommendation__person {
   position: relative;
@@ -393,37 +412,6 @@ h1 {
   margin-top: -1ex;
 }
 
-/* looks fancy but too repetitiv
-.recommendation__quote {
-  quotes: '“''”';
-  margin-top: 1em;
-
-  text-indent: 1ex;
-
-  p::before,
-  p::after {
-    position: absolute;
-
-    color: var(--c-brand-alt);
-    display: inline-block;
-    margin-top: .25em;
-    margin-left: -.3em;
-    font-size: 10rem;
-    line-height: 0;
-    z-index: -1;
-  }
-
-  p::before {
-    content: open-quote;
-  }
-
-  p::after {
-    content: close-quote;
-    margin-top: .5em;
-    margin-left: -.45em;
-  }
-}*/
-
 .illustration {
   position: absolute;
   z-index: 3;
@@ -431,27 +419,31 @@ h1 {
   bottom: 0;
   right: 10%;
   pointer-events: none;
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .illustration {
     z-index: -1;
     width: 80%;
   }
+}
 
-  &__image {
-    width: 100%;
+.illustration__image {
+  width: 100%;
+}
 
-    @media only screen and (max-width: 1024px) {
-      position: fixed;
-      bottom: 0;
-      width: 80%;
-    }
+@media only screen and (max-width: 1024px) {
+  .illustration__image {
+    position: fixed;
+    bottom: 0;
+    width: 80%;
   }
+}
 
-  &__clock {
-      position: absolute;
-      bottom: 70%;
-      right: 18%;
-  }
+.illustration__clock {
+  position: absolute;
+  bottom: 70%;
+  right: 18%;
 }
 
 .clock {
@@ -465,8 +457,10 @@ h1 {
   border-radius: 50%;
   border: .5rem solid var(--c-brand-alt);
   transform: translate(50%, -50%);
+}
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  .clock {
     --s-clock-diameter: 7.2vmax;
     --s-hand-diameter: .8rem;
 
@@ -475,63 +469,62 @@ h1 {
     bottom: 30vw;
     right: 22vw;
   }
+}
 
-  &::after {
-    content: '';
-    position: absolute;
-    width: var(--s-hand-diameter);
-    height: var(--s-hand-diameter);
-    background: var(--c-text);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.clock::after {
+  content: '';
+  position: absolute;
+  width: var(--s-hand-diameter);
+  height: var(--s-hand-diameter);
+  background: var(--c-text);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  &__hand {
-    --c-hand-bg: var(--c-text);
-    --progress: 0;
+.clock__hand {
+  --c-hand-bg: var(--c-text);
+  --progress: 0;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: var(--s-hand-diameter);
-    height: var(--s-hand-diameter);
-    margin-top: calc(var(--s-hand-diameter) * -0.5);
-    margin-left: calc(var(--s-hand-diameter) * -0.5);
-    //transform: rotate(calc(var(--progress) * 360deg));
-    will-change: transform;
-    animation: rotate 60s infinite steps(60);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--s-hand-diameter);
+  height: var(--s-hand-diameter);
+  margin-top: calc(var(--s-hand-diameter) * -0.5);
+  margin-left: calc(var(--s-hand-diameter) * -0.5);
+  will-change: transform;
+  animation: rotate 60s infinite steps(60);
+}
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 40%;
-      height: calc(var(--s-clock-diameter) * .5 * var(--s-hand-factor));
-      background: var(--c-hand-bg);
-      border-radius: 2rem;
-      transform: translateX(-50%);
-    }
+.clock__hand::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40%;
+  height: calc(var(--s-clock-diameter) * .5 * var(--s-hand-factor));
+  background: var(--c-hand-bg);
+  border-radius: 2rem;
+  transform: translateX(-50%);
+}
 
-    &--second {
-      --progress: var(--minute-progress, 0);
-      --c-hand-bg: var(--c-brand);
-      animation-duration: 60s;
-    }
+.clock__hand--second {
+  --progress: var(--minute-progress, 0);
+  --c-hand-bg: var(--c-brand);
+  animation-duration: 60s;
+}
 
-    &--minute {
-      --progress: var(--hour-progress, 0);
-      animation-duration: 3600s;
-    }
+.clock__hand--minute {
+  --progress: var(--hour-progress, 0);
+  animation-duration: 3600s;
+}
 
-    &--hour {
-      --progress: var(--day-progress, 0);
-      --s-hand-factor: .55;
-      animation-duration: 43200s;
-    }
-  }
+.clock__hand--hour {
+  --progress: var(--day-progress, 0);
+  --s-hand-factor: .55;
+  animation-duration: 43200s;
 }
 
 @keyframes rotate {
@@ -550,30 +543,4 @@ h1 {
   left: 0;
   height: calc(20rem + var(--s-page-bezel));
   clip: rect(auto, auto, auto, auto);
-}
-
-.is-playing {
-  .video {
-    opacity: 1;
-  }
-
-  .logo__type,
-  .logo,
-  .banner,
-  .recommendations,
-  .social {
-    opacity: 0;
-  }
-
-  .intro,
-  .intro__link {
-    transition: color 200ms;
-    color: var(--c-bg);
-    text-decoration: none;
-    //mix-blend-mode: difference;
-  }
-
-  .logo__symbol {
-    transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem + var(--top))) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress))) scale(2);
-  }
 }

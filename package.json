@@ -10,8 +10,7 @@
     "pretest": "npm run lint",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint --ext .js",
-    "lint:css": "npm run lint:css:scss",
-    "lint:css:scss": "stylelint 'src/**/*.scss'"
+    "lint:css": "stylelint 'src/**/*.css'"
   },
   "repository": {
     "type": "git",
