@@ -75,6 +75,203 @@ quotes:
     position: Senior Frontend Engineer at ZKB
     personUrl: https://www.linkedin.com/in/myriamfrisano/
 
+research:
+  -
+    title: Charcuterie
+    url: https://charcuterie.elastiq.ch/
+    year: 2026
+    description: A visual explorer for Unicode — browse characters, scripts, symbols and shapes.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="15" cy="15" r="3"/><circle cx="30" cy="15" r="3"/><circle cx="45" cy="15" r="3"/>
+        <circle cx="15" cy="30" r="3"/><circle cx="30" cy="30" r="3"/><circle cx="45" cy="30" r="3"/>
+        <circle cx="15" cy="45" r="3"/><circle cx="30" cy="45" r="3"/><circle cx="45" cy="45" r="3"/>
+      </svg>
+  -
+    title: Heerich
+    url: https://meodai.github.io/heerich/
+    year: 2026
+    description: A tiny engine for 3D voxel scenes rendered to SVG, after Erwin Heerich.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M30 8 L52 20 L52 40 L30 52 L8 40 L8 20 Z"/>
+        <path d="M30 30 L30 52 M8 20 L30 30 M52 20 L30 30"/>
+      </svg>
+  -
+    title: PickyPalette
+    url: https://pickypalette.color.pizza/
+    year: 2026
+    description: Handpicked palette suggestions with perceptual tuning.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="8" y="10" width="28" height="28"/>
+        <path d="M36 34 L50 48"/>
+        <path d="M44 42 L50 48 L44 48 M50 42 L50 48"/>
+      </svg>
+  -
+    title: OKpalette
+    url: https://okpalette.color.pizza/
+    year: 2026
+    description: Perceptually-aware palette extraction in OKLCh.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="30" cy="30" r="22"/>
+        <circle cx="30" cy="30" r="14"/>
+        <circle cx="30" cy="30" r="6"/>
+      </svg>
+  -
+    title: DittoTones
+    url: https://meodai.github.io/dittoTones/
+    year: 2025
+    description: Copy the perceptual DNA of design systems into any palette.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="10" y="12" width="40" height="6" rx="1"/>
+        <rect x="10" y="22" width="40" height="6" rx="1"/>
+        <rect x="10" y="32" width="40" height="6" rx="1"/>
+        <rect x="10" y="42" width="40" height="6" rx="1"/>
+      </svg>
+  -
+    title: Pro Color Harmonies
+    url: https://meodai.github.io/pro-color-harmonies/
+    year: 2025
+    description: Color generation library based on classic harmony rules.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="30" cy="30" r="22"/>
+        <path d="M30 8 L49 41 L11 41 Z"/>
+      </svg>
+  -
+    title: Poline Orbits
+    url: https://poline-orbits.color.pizza/
+    year: 2025
+    description: Circular visual exploration built on the Poline palette engine.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="30" cy="30" rx="24" ry="10"/>
+        <ellipse cx="30" cy="30" rx="10" ry="24"/>
+        <circle cx="30" cy="30" r="3"/>
+      </svg>
+  -
+    title: Color Router
+    url: https://github.com/meodai/color-router
+    year: 2025
+    description: Reactive color management with palette inheritance and routing.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="15" cy="15" r="4"/>
+        <circle cx="45" cy="15" r="4"/>
+        <circle cx="30" cy="45" r="4"/>
+        <path d="M17 17 L43 17 M17 17 L29 42 M43 17 L31 42"/>
+      </svg>
+  -
+    title: Verloop
+    url: https://verloop.xyz/
+    year: 2024
+    description: Gradient exploration — a collaboration with Rik Oostenbroek.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="8" y="8" width="44" height="44" rx="3"/>
+        <path d="M12 44 Q20 20 30 30 T48 16"/>
+      </svg>
+  -
+    title: RYBitten
+    url: https://rybitten.space/
+    year: 2024
+    description: Pseudo-RYB color conversions derived from Johannes Itten's color wheel.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="24" r="14"/>
+        <circle cx="38" cy="24" r="14"/>
+        <circle cx="30" cy="40" r="14"/>
+      </svg>
+  -
+    title: Albers
+    url: https://albers.elastiq.ch/
+    year: 2023
+    description: A generative homage to the square, exploring color and perception.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="5" y="5" width="50" height="50"/>
+        <rect x="12" y="12" width="36" height="32"/>
+        <rect x="20" y="18" width="20" height="18"/>
+      </svg>
+  -
+    title: Poline
+    url: https://meodai.github.io/poline/
+    year: 2023
+    description: Esoteric palette generator interpolating HSL in cartesian space.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 46 C 20 10, 40 50, 52 14"/>
+        <circle cx="8" cy="46" r="3"/>
+        <circle cx="52" cy="14" r="3"/>
+      </svg>
+  -
+    title: Color Name API
+    url: https://meodai.github.io/color-name-api/
+    year: 2022
+    description: REST API returning color names for any given color value.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M22 14 L10 30 L22 46"/>
+        <path d="M38 14 L50 30 L38 46"/>
+        <path d="M34 14 L26 46"/>
+      </svg>
+  -
+    title: Rampensau
+    url: https://meodai.github.io/rampensau/
+    year: 2022
+    description: Palette generation using hue cycling and easing functions.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M6 48 Q30 10 54 48"/>
+        <path d="M46 42 L54 48 L46 54"/>
+      </svg>
+  -
+    title: Color Description
+    url: https://words.github.io/color-description/
+    year: 2021
+    description: Turns a technical color representation into a human-readable description.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 12 L52 12 L52 40 L30 40 L22 52 L22 40 L8 40 Z"/>
+        <path d="M16 22 L44 22 M16 30 L36 30"/>
+      </svg>
+  -
+    title: Parrot
+    url: https://parrot.color.pizza/
+    year: 2021
+    description: A bot that tweets random colors and lets you invent new ones.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 30 Q15 14 30 14 Q45 14 45 30 L45 40 Q40 50 30 50 L20 50 L24 42 L14 36 Z"/>
+        <circle cx="37" cy="24" r="1.5"/>
+        <path d="M45 28 L52 24 L48 32"/>
+      </svg>
+  -
+    title: Farbvelo
+    url: https://farbvelo.elastiq.ch/
+    year: 2020
+    description: Random color palette generator cycling through hue ranges.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="30" cy="30" r="22"/>
+        <circle cx="30" cy="30" r="3"/>
+        <path d="M30 8 L30 52 M8 30 L52 30 M14 14 L46 46 M46 14 L14 46"/>
+      </svg>
+  -
+    title: Color Names
+    url: https://github.com/meodai/color-names
+    year: 2017
+    description: 30k+ handpicked color names with smart auto-naming for any value.
+    illustration: >
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 14 L42 14 L52 24 L52 46 L8 46 Z"/>
+        <circle cx="44" cy="22" r="2"/>
+        <path d="M14 28 L38 28 M14 36 L32 36"/>
+      </svg>
+
 projects:
   -
     title: Helsana Microsite

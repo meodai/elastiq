@@ -102,19 +102,35 @@
 
       <p class="intro" aria-label="mission statement">{{{ introhtml }}}</p>
 
-      <article class="recommendations section">
-        <h2 class="recommendations__title title title--sub">Recommendations</h2>
+      <div class="sections-row">
+        <article class="research section">
+          <h2 class="research__title title title--sub">Design Research</h2>
 
-        <each loop="quote, index in quotes">
-          <aside class="recommendation">
-            <h3 class="recommendation__person"><a href="{{ quote.personUrl }}">{{ quote.person }}</a></h3>
-            <h4 class="recommendation__title">{{ quote.position }}</h4>
-            <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
-              <p>{{{ quote.text }}}</p>
-            </blockquote>
-          </aside>
-        </each>
-      </article>
+          <each loop="item, index in research">
+            <a class="research__item" href="{{ item.url }}">
+              <span class="research__illustration" aria-hidden="true">{{{ item.illustration }}}</span>
+              <span class="research__body">
+                <h3 class="research__name">{{ item.title }} <span class="research__year">{{ item.year }}</span></h3>
+                <span class="research__description">{{ item.description }}</span>
+              </span>
+            </a>
+          </each>
+        </article>
+
+        <article class="recommendations section">
+          <h2 class="recommendations__title title title--sub">Recommendations</h2>
+
+          <each loop="quote, index in quotes">
+            <aside class="recommendation">
+              <h3 class="recommendation__person"><a href="{{ quote.personUrl }}">{{ quote.person }}</a></h3>
+              <h4 class="recommendation__title">{{ quote.position }}</h4>
+              <blockquote cite="https://www.linkedin.com/in/davidaerne/" class="recommendation__quote">
+                <p>{{{ quote.text }}}</p>
+              </blockquote>
+            </aside>
+          </each>
+        </article>
+      </div>
 
       <!--article class="about section">
         <h2 class="social__title title--sub">About David</h2>
