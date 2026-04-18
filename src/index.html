@@ -108,11 +108,8 @@
 
           <each loop="item, index in research">
             <a class="research__item" href="{{ item.url }}">
-              <span class="research__illustration" aria-hidden="true">{{{ item.illustration }}}</span>
-              <span class="research__body">
-                <h3 class="research__name">{{ item.title }} <span class="research__year">{{ item.year }}</span></h3>
-                <span class="research__description">{{ item.description }}</span>
-              </span>
+              <h3 class="research__name">{{ item.title }} <span class="research__year">{{ item.year }}</span></h3>
+              <span class="research__description">{{ item.description }}</span>
             </a>
           </each>
         </article>

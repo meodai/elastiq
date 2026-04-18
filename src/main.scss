@@ -313,10 +313,7 @@ h1 {
 }
 
 .research__item {
-  display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  gap: 1.25rem;
-  align-items: start;
+  display: block;
   text-decoration: none;
   color: inherit;
 
@@ -329,35 +326,8 @@ h1 {
   }
 }
 
-.research__illustration {
-  display: block;
-  width: 4.5rem;
-  height: 4.5rem;
-  margin-top: 0.4rem;
-
-  svg {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    fill: none;
-    stroke: var(--c-text);
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: stroke 300ms ease, fill 300ms ease, transform 400ms ease;
-    transform-origin: 50% 50%;
-  }
-}
-
-.research__item:hover .research__illustration svg {
-  stroke: var(--c-brand-w3a);
-  fill: var(--c-brand-alt);
-  animation: research-wiggle 600ms ease-in-out;
-}
-
-.research__body {
-  display: block;
-  min-width: 0;
+.research__title {
+  margin-bottom: 3rem;
 }
 
 .research__name {
@@ -385,13 +355,6 @@ h1 {
   color: var(--c-brand-w3a);
   margin-top: 0.25em;
   line-height: 1.4;
-}
-
-@keyframes research-wiggle {
-  0%   { transform: rotate(0deg) scale(1); }
-  25%  { transform: rotate(-6deg) scale(1.05); }
-  60%  { transform: rotate(4deg) scale(1.05); }
-  100% { transform: rotate(0deg) scale(1); }
 }
 
 .social,
@@ -613,8 +576,4 @@ h1 {
   .logo__symbol {
     transform: translate(-50%, calc(-50% - var(--progressMax) * 40rem + var(--top))) scale(calc(0.3 + var(--progressMax) * 0.6)) rotate(calc(-32deg * var(--progress))) scale(2);
   }
-}
-
-.logo__symbol {
-  //transition: 200ms opacity, 300ms transform;
 }
