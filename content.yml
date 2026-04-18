@@ -80,7 +80,7 @@ research:
     title: Charcuterie
     url: https://charcuterie.elastiq.ch/
     year: 2026
-    description: A visual explorer for discovering Unicode characters, scripts, symbols, and related glyphs.
+    description: Exploring embeddings by building a visual explorer for discovering Unicode characters, scripts, symbols, and related glyphs.
   -
     title: Heerich
     url: https://meodai.github.io/heerich/
