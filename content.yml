@@ -80,62 +80,62 @@ research:
     title: Charcuterie
     url: https://charcuterie.elastiq.ch/
     year: 2026
-    description: A visual explorer for Unicode — browse characters, scripts, symbols and shapes.
+    description: A visual explorer for discovering Unicode characters, scripts, symbols, and related glyphs.
   -
     title: Heerich
     url: https://meodai.github.io/heerich/
     year: 2026
-    description: A tiny engine for 3D voxel scenes rendered to SVG, after Erwin Heerich.
+    description: A lightweight engine for building 3D voxel scenes and rendering them as SVG.
   -
     title: PickyPalette
     url: https://pickypalette.color.pizza/
     year: 2026
-    description: Handpicked palette suggestions with perceptual tuning.
+    description: An interactive color picker where palettes are sculpted directly on a color model using perceptual distance.
   -
     title: OKpalette
     url: https://okpalette.color.pizza/
     year: 2026
-    description: Perceptually-aware palette extraction in OKLCh.
+    description: A palette extractor that picks image colors in OKLCh with harmony-aware, perceptual selection.
   -
     title: DittoTones
     url: https://meodai.github.io/dittoTones/
     year: 2025
-    description: Copy the perceptual DNA of design systems into any palette.
+    description: Transforms a single color into a full palette by copying the perceptual structure of existing design systems.
   -
     title: Pro Color Harmonies
     url: https://meodai.github.io/pro-color-harmonies/
     year: 2025
-    description: Color generation library based on classic harmony rules.
+    description: A TypeScript library for generating perceptually tuned OKLCh color harmonies and palette variations.
   -
     title: Poline Orbits
     url: https://poline-orbits.color.pizza/
     year: 2025
-    description: Circular visual exploration built on the Poline palette engine.
+    description: A circular playground for exploring palettes and color relationships with the Poline engine.
   -
     title: Color Router
     url: https://github.com/meodai/color-router
     year: 2025
-    description: Reactive color management with palette inheritance and routing.
+    description: A reactive TypeScript color system that treats palettes like spreadsheets with references, functions, and cascading updates.
   -
     title: Verloop
     url: https://verloop.xyz/
     year: 2024
-    description: Gradient exploration — a collaboration with Rik Oostenbroek.
+    description: A gradient exploration tool for discovering and shaping color transitions, created with Rik Oostenbroek.
   -
     title: RYBitten
     url: https://rybitten.space/
     year: 2024
-    description: Pseudo-RYB color conversions derived from Johannes Itten's color wheel.
+    description: A color conversion library for translating between RGB and Itten-inspired RYB color spaces.
   -
     title: Albers
     url: https://albers.elastiq.ch/
     year: 2023
-    description: A generative homage to the square, exploring color and perception.
+    description: A generative study of color interaction inspired by Josef Albers and the square.
   -
     title: Poline
     url: https://meodai.github.io/poline/
     year: 2023
-    description: Esoteric palette generator interpolating HSL in cartesian space.
+    description: A micro-library for generating color palettes by interpolating HSL in cartesian space.
   -
     title: Color Name API
     url: https://meodai.github.io/color-name-api/
@@ -150,22 +150,22 @@ research:
     title: Color Description
     url: https://words.github.io/color-description/
     year: 2021
-    description: Turns a technical color representation into a human-readable description.
+    description: A library that turns technical color values into human-readable color descriptions.
   -
     title: Parrot
     url: https://parrot.color.pizza/
     year: 2021
-    description: A bot that (used to) tweet random colors and let you invent new ones.
+    description: The companion site for a collaborative color bot that posts random colors and collects invented names.
   -
     title: Farbvelo
     url: https://farbvelo.elastiq.ch/
     year: 2020
-    description: Generative color palette generator cycling through hue ranges.
+    description: A generative color harmony cycler that moves through hue ranges to build palettes.
   -
     title: Color Names
     url: https://github.com/meodai/color-names
     year: 2017
-    description: Collection of 30k+ color names, meticulously collected and invented over the years.
+    description: A curated dataset of more than 30,000 color names collected and invented over the years.
 
 doodles:
   -
