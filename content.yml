@@ -177,6 +177,12 @@ research:
     tagline: ''
     description: Palette generation library using hue cycling and easing functions.
   -
+    title: fxHash
+    url: https://www.fxhash.xyz/u/meodai
+    year: 2022
+    tagline: ''
+    description: A collection of generative art pieces released as on-chain tokens on fxhash.
+  -
     title: Color Description
     url: https://words.github.io/color-description/
     year: 2021
