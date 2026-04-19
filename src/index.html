@@ -107,10 +107,11 @@
           <h2 class="research__title title title--sub">Design Research</h2>
 
           <each loop="item, index in research">
-            <a class="research__item" href="{{ item.url }}">
-              <h3 class="research__name">{{ item.title }} <span class="research__year">{{ item.year }}</span></h3>
-              <span class="research__description">{{ item.description }}</span>
-            </a>
+            <div class="research__item">
+              <h3 class="research__name"><a href="{{ item.url }}">{{ item.title }}</a> <span class="research__year">{{ item.year }}</span></h3>
+              <aside class="research__tagline">{{ item.tagline }}</aside>
+              <p class="research__description">{{ item.description }}</p>
+            </div>
           </each>
         </article>
 
