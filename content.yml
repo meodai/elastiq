@@ -130,11 +130,11 @@ research:
     tagline: ''
     description: A reactive TypeScript color system that treats palettes like spreadsheets with references, functions, and cascading updates.
   -
-    title: Verloop
+    title: Verloop — Dégradé
     url: https://verloop.xyz/
     year: 2024
     tagline: ''
-    description: A gradient exploration tool for discovering and shaping color transitions, created with Rik Oostenbroek.
+    description: A large-format book featuring generative gradients created with Rik Oostenbroek, exploring where handcrafted color transitions meet algorithmic composition. Featured at Paris Photo 2024.
   -
     title: RYBitten
     url: https://rybitten.space/
