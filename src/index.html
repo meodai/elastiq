@@ -111,6 +111,7 @@
               <h3 class="research__name"><a href="{{ item.url }}">{{ item.title }}</a> <span class="research__year">{{ item.year }}</span></h3>
               <aside class="research__tagline">{{ item.tagline }}</aside>
               <p class="research__description">{{ item.description }}</p>
+              <p class="research__mentions"><each loop="mention, mi in (item.mentions || []).filter(function(m){return m.label.indexOf('Hacker News') === 0})">{{ mi === 0 ? '' : ' · ' }}<span class="research__mention" title="{{ mention.label }}{{ mention.links.length === 1 ? '' : ' ' + mention.links.length + 'x' }}">HN<each loop="link, li in mention.links"> <a href="{{ link }}">{{ li + 1 }}</a></each></span></each></p>
             </div>
           </each>
         </article>

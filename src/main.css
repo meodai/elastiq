@@ -375,6 +375,22 @@ p {
   line-height: 1.4;
 }
 
+.research__mentions {
+  position: relative;
+  z-index: 2;
+  font-size: var(--t-slight);
+  color: var(--c-brand-w3a);
+  margin-top: 0.5em;
+}
+
+.research__mentions:empty {
+  display: none;
+}
+
+.research__mention {
+  cursor: help;
+}
+
 .social,
 .code {
   color: var(--c-brand-w3a);
