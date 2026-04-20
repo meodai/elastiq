@@ -206,11 +206,13 @@ research:
     year: 2017
     tagline: ''
     description: A curated dataset of more than 30,000 color names collected and invented over the years.
+  -
+    title: 3D Color Name Distribution
+    url: https://codepen.io/meodai/full/zdgXJj
+    year: 2017
+    tagline: ''
+    description: Plots the entire color-names collection across multiple 3D color models to reveal where the dataset is dense, sparse, or unevenly distributed.
     mentions:
-      -
-        label: CodePen demo
-        links:
-          - https://codepen.io/meodai/full/zdgXJj/
       -
         label: Hacker News front page
         links:

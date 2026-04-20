@@ -345,7 +345,9 @@ p {
   font-size: var(--t-copy);
   font-weight: normal;
   font-style: italic;
+  line-height: 1.2;
   margin-top: -0.25ex;
+  margin-bottom: 0.3em;
 }
 
 .research__year {
