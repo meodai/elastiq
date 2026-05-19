@@ -77,6 +77,12 @@ quotes:
 
 research:
   -
+    title: Design Book
+    url: https://meodai.github.io/design-book/
+    year: 2026
+    tagline: ''
+    description: A reactive engine for design systems that stores the rules behind decisions rather than fixed values, recomputing dependent tokens when inputs change.
+  -
     title: Charcuterie
     url: https://charcuterie.elastiq.ch/
     year: 2026
