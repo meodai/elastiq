@@ -100,6 +100,12 @@ research:
     tagline: ''
     description: A lightweight engine for building 3D voxel scenes and rendering them as SVG.
   -
+    title: Color Palette Shader
+    url: https://meodai.github.io/color-palette-shader/
+    year: 2026
+    tagline: ''
+    description: A WebGL shader that renders smooth, animated color palettes and gradients directly on the GPU.
+  -
     title: PickyPalette
     url: https://pickypalette.color.pizza/
     year: 2026
