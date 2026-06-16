@@ -14,9 +14,8 @@ notablementions:
     text: >
       Poline by David Aerne is a software tool for designing and manipulating generative color systems, either through code or via a masterfully designed interface. By playing with sliders, buttons and anchor points, users can explore color combinations by fine-tuning them with precision or by discovering them through happy accidents.
       Poline is only one of several self-initiated projects around color, developed over many years and generously shared with the open-source community.
-    person: Swiss Federal Office of Culture
-    position: Swiss Design Awards Jury 2026
-    personUrl: https://www.schweizerkulturpreise.ch/en/david-aerne-2026-en
+    platform: Swiss Federal Office of Culture
+    title: Swiss Design Award 2026
 
 quotes:
   -
