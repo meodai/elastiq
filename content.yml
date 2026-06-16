@@ -88,9 +88,10 @@ research:
     year: 2026
     tagline: ''
     description: Exploring embeddings by building a visual explorer for discovering Unicode characters, scripts, symbols, and related glyphs.
-    mentions:
+    publications:
       -
         label: Hacker News front page
+        short: HN
         links:
           - https://news.ycombinator.com/item?id=47709158
   -
@@ -165,9 +166,14 @@ research:
     year: 2023
     tagline: ''
     description: A micro-library for generating color palettes by interpolating HSL in cartesian space.
-    mentions:
+    awards:
+      -
+        label: SDA Winner – 2026
+        url: https://www.schweizerkulturpreise.ch/en/david-aerne-2026-en
+    publications:
       -
         label: Hacker News front page
+        short: HN
         links:
           - https://news.ycombinator.com/item?id=34662722
           - https://news.ycombinator.com/item?id=44279569
@@ -177,9 +183,10 @@ research:
     year: 2022
     tagline: ''
     description: Most Popular color-name REST API returning color names for any given color value.
-    mentions:
+    publications:
       -
         label: Hacker News front page
+        short: HN
         links:
           - https://news.ycombinator.com/item?id=44317291
   -
@@ -224,9 +231,10 @@ research:
     year: 2017
     tagline: ''
     description: Plots the entire color-names collection across multiple 3D color models to reveal where the dataset is dense, sparse, or unevenly distributed.
-    mentions:
+    publications:
       -
         label: Hacker News front page
+        short: HN
         links:
           - https://news.ycombinator.com/item?id=45748816
 

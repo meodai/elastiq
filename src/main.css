@@ -393,6 +393,26 @@ p {
   cursor: help;
 }
 
+.research__awards {
+  position: relative;
+  z-index: 2;
+  font-size: var(--t-slight);
+  margin-top: 0.5em;
+}
+
+.research__awards:empty {
+  display: none;
+}
+
+.research__award {
+  display: block;
+}
+
+.research__award::after {
+  content: '\2197'; /* ↗ external link */
+  margin-left: 0.15em;
+}
+
 .social,
 .code {
   color: var(--c-brand-w3a);
