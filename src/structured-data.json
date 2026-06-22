@@ -21,7 +21,6 @@
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "Owner / Webmaster",
-    "telephone": "[+41788958119]",
     "email": "david@elastiq.ch"
   },
   "sameAs": [
