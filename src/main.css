@@ -583,3 +583,32 @@ p {
   height: calc(20rem + var(--s-page-bezel));
   clip: rect(auto, auto, auto, auto);
 }
+
+@media print {
+  :root {
+    --c-layout-bg: transparent;
+    --c-bg: #fff;
+    --c-text: #000;
+  }
+
+  .address--footer,
+  .address--footer a {
+    color: var(--c-text);
+  }
+
+  /* stack the columns: references above the quotes */
+  .sections-row {
+    display: block;
+  }
+
+  .sections-row > .section + .section {
+    margin-top: var(--s-content-stack);
+  }
+
+  /* fixed elements repeat on every printed page; anchor the
+     rubber band to the first page instead */
+  .logo__symbol {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+}
