@@ -98,6 +98,12 @@ research:
     tagline: ''
     description: A color utility that measures chroma relative to the gamut boundary, so saturation means the same thing at every lightness and hue and never lands out of gamut.
   -
+    title: Color Names Timeline
+    url: https://meodai.github.io/color-names-timeline/
+    year: 2026
+    tagline: ''
+    description: An animated point cloud of the color-names dataset that replays nine years of contributions commit by commit, morphing between RGB, OKLab, spectral, and hue-wheel layouts.
+  -
     title: Design Book
     url: https://meodai.github.io/design-book/
     year: 2026
