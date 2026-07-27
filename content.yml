@@ -86,6 +86,12 @@ quotes:
 
 research:
   -
+    title: Ray Color
+    url: https://meodai.github.io/ray-color/
+    year: 2026
+    tagline: ''
+    description: A generative palette tool that raytraces a sphere in a lit room, where you edit the lighting conditions instead of the colors and sample naturally coherent palettes from its surface.
+  -
     title: CuspHanger
     url: https://meodai.github.io/cusphanger/
     year: 2026
